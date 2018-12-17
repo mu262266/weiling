@@ -1,0 +1,341 @@
+[ 2018-12-03T09:04:04+08:00 ] ::1 /weiling/index.php?s=/Home/index/main.html&_=1543799034810
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_quxiang` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_quxiang` ORDER BY id desc LIMIT 5   [ RunTime:0.0140s ]
+SQL: SELECT `depname` FROM `xy_user` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_renwu` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 157 行.
+SQL: SELECT * FROM `xy_renwu` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_tongzhi` [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 215 行.
+SQL: SELECT * FROM `xy_tongzhi` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_cust` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_cust` WHERE ( `xiaci` >= '2018-11-26' AND `xiaci` <= '2019-01-03'  ) AND (  `uid` = '1' OR `juid` LIKE '%1%' ) LIMIT 5   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_fahuo` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_fahuo` ORDER BY id desc LIMIT 5   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_hetong` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_hetong` WHERE (  `uid` = '1' OR `juid` LIKE '%1%' ) AND ( `jztime` >= '2018-11-26' AND `jztime` <= '2019-01-03'  ) LIMIT 5   [ RunTime:0.0150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.204011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.204011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-03T09:09:30+08:00 ] ::1 /weiling/index.php/home/api/consultation_orderlist?token=a0c2e3a2263b2672ec0c76b1abf85e39&status=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_consultation_order` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_consultation_order` WHERE `type` = 2 AND `id` = 23  [ RunTime:0.0120s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1784 行.
+
+[ 2018-12-03T09:10:43+08:00 ] ::1 /weiling/index.php/home/api/consultation_orderlist?token=a0c2e3a2263b2672ec0c76b1abf85e39&status=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_consultation_order` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_consultation_order` WHERE `type` = 2 AND `id` = 23  [ RunTime:0.0120s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1784 行.
+
+[ 2018-12-03T09:13:06+08:00 ] ::1 /weiling/index.php/home/api/consultation_orderlist?token=a0c2e3a2263b2672ec0c76b1abf85e39&status=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_consultation_order` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_consultation_order` WHERE `type` = 2 AND `id` = 23  [ RunTime:0.0130s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1784 行.
+
+[ 2018-12-03T09:13:57+08:00 ] ::1 /weiling/index.php/home/api/consultation_orderlist?token=a0c2e3a2263b2672ec0c76b1abf85e39&status=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_consultation_order` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_consultation_order` WHERE `type` = 1 AND `id` = 23  [ RunTime:0.0130s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1752 行.
+
+[ 2018-12-03T09:14:41+08:00 ] ::1 /weiling/index.php/home/api/consultation_orderlist?token=a0c2e3a2263b2672ec0c76b1abf85e39&status=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_consultation_order` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_consultation_order` WHERE `type` = 1 AND `id` = 23  [ RunTime:0.0140s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1752 行.
+
+[ 2018-12-03T09:16:06+08:00 ] ::1 /weiling/index.php/home/api/consultation_orderlist?token=a0c2e3a2263b2672ec0c76b1abf85e39&status=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_consultation_order` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_consultation_order` WHERE `type` = 1 AND `id` = 23  [ RunTime:0.0130s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1753 行.
+
+[ 2018-12-03T09:16:37+08:00 ] ::1 /weiling/index.php/home/api/consultation_orderlist?token=a0c2e3a2263b2672ec0c76b1abf85e39&status=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_consultation_order` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_consultation_order` WHERE ( appid=23 )  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_patient` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_patient` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `name` FROM `xy_patient` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_patient` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `name` FROM `xy_patient` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2018-12-03T09:16:52+08:00 ] ::1 /weiling/index.php/home/api/consultation_orderlist?token=a0c2e3a2263b2672ec0c76b1abf85e39&status=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_consultation_order` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_consultation_order` WHERE `type` = 1 AND `id` = 23  [ RunTime:0.0140s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1753 行.
+
+[ 2018-12-03T09:17:55+08:00 ] ::1 /weiling/index.php/home/api/consultation_orderlist?token=a0c2e3a2263b2672ec0c76b1abf85e39&status=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_consultation_order` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_consultation_order` WHERE `type` = 1 AND `appid` = 23  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_patient` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_patient` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0110s ]
+
+[ 2018-12-03T10:10:09+08:00 ] ::1 /weiling/index.php/home/hospital/index?_=1543803000222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Controller\HospitalController::del() should be compatible with Common\Controller\BaseController::del() D:\phpStudy\WWW\weiling\App\Home\Controller\HospitalController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `xy_hospital` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_hospital` WHERE (  `id` <> '0' ) AND `pid` = 0 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_hospital` WHERE (  `id` <> '0' ) AND `pid` = 0 ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\026e11ada8f2ce273c44b3b84bac6fad.php 第 8 行.
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_mtype` WHERE ( pid=17 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_mtype` WHERE ( pid=16 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_mtype` WHERE ( pid=15 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_mtype` WHERE ( pid=14 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-12-03T10:10:22+08:00 ] ::1 /weiling/index.php?s=/Home/Hospital/edit/id/17/navTabId/Hospital&_=1543803013443
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\HospitalController::del() should be compatible with Common\Controller\BaseController::del() D:\phpStudy\WWW\weiling\App\Home\Controller\HospitalController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `xy_hospital` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_project` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xy_project` WHERE ( pid=0 )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_hospital` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Controller\HospitalController::_after_edit() D:\phpStudy\WWW\weiling\App\Home\Controller\HospitalController.class.php 第 115 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-12-03T10:10:44+08:00 ] ::1 /weiling/index.php?s=/Home/Hospital/edit/navTabId/Hospital
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\HospitalController::del() should be compatible with Common\Controller\BaseController::del() D:\phpStudy\WWW\weiling\App\Home\Controller\HospitalController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `xy_hospital` [ RunTime:0.0140s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\weiling\Core\Library\Think\Upload.class.php 第 170 行.
+SQL: UPDATE `xy_hospital` SET `name`='沈阳市第一人民医院',`address`='21312312213',`link`='',`tel`='11112333331231',`level`='0',`img`='/2018-12-03/5c0490a4ba416.png' WHERE `id` = 17 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_user` SET `update_time`='1543803044' WHERE `id` = 1 [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','编辑成功17','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/weiling/index.php?s=/Home/Hospital/edit.html','2018-12-03 10:10:44','0.0.0.0') [ RunTime:0.0150s ]
+
+[ 2018-12-03T10:10:54+08:00 ] ::1 /weiling/index.php/home/hospital/index?_=1543803044974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Controller\HospitalController::del() should be compatible with Common\Controller\BaseController::del() D:\phpStudy\WWW\weiling\App\Home\Controller\HospitalController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `xy_hospital` [ RunTime:0.0170s ]
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_hospital` WHERE (  `id` <> '0' ) AND `pid` = 0 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_hospital` WHERE (  `id` <> '0' ) AND `pid` = 0 ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\026e11ada8f2ce273c44b3b84bac6fad.php 第 8 行.
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_mtype` WHERE ( pid=17 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_mtype` WHERE ( pid=16 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_mtype` WHERE ( pid=15 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_mtype` WHERE ( pid=14 ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-03T10:39:10+08:00 ] ::1 /weiling/index.php/home/api/pay?token=a0c2e3a2263b2672ec0c76b1abf85e39&ordernumber=2018112854571015&type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0110s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( numbering=2018112854571015 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `money` FROM `xy_app_member` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: UPDATE `xy_app_member` SET `money`='99506.5' WHERE ( id=23 ) [ RunTime:0.0160s ]
+
+[ 2018-12-03T10:43:18+08:00 ] ::1 /weiling/index.php/home/order/index?_=1543804989255
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weiling\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=30 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=30 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=30 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=30 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=30 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=30 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-03T10:47:46+08:00 ] ::1 /weiling/index.php/home/api/pay?token=a0c2e3a2263b2672ec0c76b1abf85e39&ordernumber=2018112854571015&type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( numbering=2018112854571015 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `money` FROM `xy_app_member` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: UPDATE `xy_app_member` SET `money`='99013' WHERE ( id=23 ) [ RunTime:0.0180s ]
+SQL: UPDATE `xy_order` SET `payment_status`='1',`pay_time`='1543805266' WHERE ( numbering=2018112854571015 ) [ RunTime:0.0180s ]
+
+[ 2018-12-03T16:55:59+08:00 ] ::1 /weiling/index.php/home/api/pay?token=a0c2e3a2263b2672ec0c76b1abf85e39&ordernumber=2018112854571015&type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016001s ]
+ERR: 非法操作:pay
+

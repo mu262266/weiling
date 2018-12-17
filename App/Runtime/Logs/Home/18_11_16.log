@@ -1,0 +1,2702 @@
+[ 2018-11-16T08:31:02+08:00 ] ::1 /123123/index.php?s=/Home/index/main.html&_=1542328252471
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with that of Common\Controller\BaseController::index() D:\phpStudy\WWW\123123\App\Home\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_quxiang` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_quxiang` ORDER BY id desc LIMIT 5   [ RunTime:0.0150s ]
+SQL: SELECT `depname` FROM `xy_user` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_renwu` [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 79 行.
+SQL: SELECT * FROM `xy_renwu` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_tongzhi` [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 108 行.
+SQL: SELECT * FROM `xy_tongzhi` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_cust` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xy_cust` WHERE ( `xiaci` >= '2018-11-09' AND `xiaci` <= '2018-12-16'  ) AND (  `uid` = '1' OR `juid` LIKE '%1%' ) LIMIT 5   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_fahuo` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xy_fahuo` ORDER BY id desc LIMIT 5   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_hetong` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_hetong` WHERE (  `uid` = '1' OR `juid` LIKE '%1%' ) AND ( `jztime` >= '2018-11-09' AND `jztime` <= '2018-12-16'  ) LIMIT 5   [ RunTime:0.0160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.364021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.364021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-11-16T08:31:30+08:00 ] ::1 /123123/index.php/home/order/index?_=1542328280598
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0190s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.2250s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T08:38:03+08:00 ] ::1 /123123/index.php/home/order/index?_=1542328672140
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T08:39:40+08:00 ] ::1 /123123/index.php/home/order/index?_=1542328770941
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T08:43:27+08:00 ] ::1 /123123/index.php/home/order/index?_=1542328996789
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T08:43:42+08:00 ] ::1 /123123/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with that of Common\Controller\BaseController::index() D:\phpStudy\WWW\123123\App\Home\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE `update_time` > 1542328421 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_msg` [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_msg` WHERE `viewtime` < '2000-01-01' AND `juid` = '1' LIMIT 1   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `xy_menu` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=0 ) ORDER BY sort  [ RunTime:0.0720s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=1 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=119 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=119 ) ORDER BY sort  [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=8 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=8 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=125 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=125 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=131 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=131 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=135 ) ORDER BY sort  [ RunTime:0.0110s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=158 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=158 ) ORDER BY sort  [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=136 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=136 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=142 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=142 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=159 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=159 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=147 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=147 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=148 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=148 ) ORDER BY sort  [ RunTime:0.0200s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=149 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=150 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=150 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=154 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=154 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=182 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=182 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=113 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=209 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=209 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=210 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=210 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=199 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=199 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=183 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=183 ) ORDER BY sort  [ RunTime:0.0160s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=190 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=190 ) ORDER BY sort  [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=202 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=202 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=118 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=118 ) ORDER BY sort  [ RunTime:0.0160s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=216 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=219 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=219 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=217 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=217 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=231 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=231 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=232 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=232 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=218 ) ORDER BY sort  [ RunTime:0.0160s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=220 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=220 ) ORDER BY sort  [ RunTime:0.0160s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=222 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=225 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=225 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=226 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=226 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=233 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=233 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=227 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=227 ) ORDER BY sort  [ RunTime:0.0110s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=228 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=229 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=229 ) ORDER BY sort  [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=230 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=230 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 234 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=7 ) ORDER BY sort  [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=9 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=9 ) ORDER BY sort  [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=22 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=22 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 255 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=24 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=24 ) ORDER BY sort  [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=21 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=21 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=13 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=13 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 250 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=179 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=179 ) ORDER BY sort  [ RunTime:0.0160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.776102s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.776102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T08:44:26+08:00 ] ::1 /123123/index.php/home/order/index?_=1542329056574
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T08:46:54+08:00 ] ::1 /123123/index.php/home/order/index?_=1542329204709
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0200s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T08:47:12+08:00 ] ::1 /123123/index.php/home/medicine/index?_=1542329221398
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\MedicineController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_medicine` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_medicine` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\7c3a8b3c38edbde89f182c8221e631c9.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T08:47:25+08:00 ] ::1 /123123/index.php?s=/Home/Medicine/view/id/5/navTabId/Medicine&_=1542329235115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_medicine` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\b750d759eef9faff7fa2a790972eb18f.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T08:47:35+08:00 ] ::1 /123123/index.php?s=/Home/Medicine/view/id/3/navTabId/Medicine&_=1542329240567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_medicine` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0110s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\b750d759eef9faff7fa2a790972eb18f.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T08:48:35+08:00 ] ::1 /123123/index.php/home/order/index?_=1542329304276
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined variable: Rs D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T08:49:01+08:00 ] ::1 /123123/index.php/home/order/index?_=1542329331734
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0160s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-11-16T08:56:45+08:00 ] ::1 /123123/index.php/home/order/index?_=1542329796078
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0150s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T08:56:57+08:00 ] ::1 /123123/index.php?s=/Home/Order/edit/id/1/navTabId/Order&_=1542329808034
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_order` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-11-16T08:59:49+08:00 ] ::1 /123123/index.php/home/order/index?_=1542329979750
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T09:07:16+08:00 ] ::1 /123123/index.php/home/order/index?_=1542330426157
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T09:07:53+08:00 ] ::1 /123123/index.php/home/order/index?_=1542330463773
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T09:13:01+08:00 ] ::1 /123123/index.php/home/order/index?_=1542330771980
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0150s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T09:52:10+08:00 ] ::1 /123123/index.php/home/order/index?_=1542333121016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T09:53:40+08:00 ] ::1 /123123/index.php/home/order/index?_=1542333210816
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0270s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0380s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T09:53:53+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542333223667
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0260s ]
+SQL: UPDATE `xy_order` SET `payment_status`='0' WHERE ( id=1 ) [ RunTime:0.0350s ]
+
+[ 2018-11-16T09:54:27+08:00 ] ::1 /123123/index.php/home/order/index?_=1542333257607
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0300s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T09:55:43+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542333333805
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0390s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0370s ]
+
+[ 2018-11-16T09:56:12+08:00 ] ::1 /123123/index.php/home/order/index?_=1542333361890
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-11-16T10:04:55+08:00 ] ::1 /123123/index.php/home/order/index?_=1542333884738
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:05:23+08:00 ] ::1 /123123/index.php/home/order/index?_=1542333913264
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:05:35+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542333925397
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0190s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T10:11:11+08:00 ] ::1 /123123/index.php/home/order/index?_=1542334260736
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0160s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0120s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:11:23+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542334274156
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T10:13:03+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542334373572
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0150s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:14:36+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542334466501
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T10:15:32+08:00 ] ::1 /123123/index.php/home/order/index?_=1542334522447
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T10:16:22+08:00 ] ::1 /123123/index.php/home/order/index?_=1542334572624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0120s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:17:38+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542334649237
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:18:04+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542334675872
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:22:10+08:00 ] ::1 /123123/index.php/home/order/index?_=1542334920496
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:22:21+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542334931669
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0110s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+NOTIC: [8] Undefined variable: ok1 D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T10:24:10+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542335040278
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+NOTIC: [8] Undefined variable: ok1 D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 8 行.
+NOTIC: [8] Undefined variable: ok1 D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T10:26:02+08:00 ] ::1 /123123/index.php/home/order/index?_=1542335151888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0120s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:26:13+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542335163596
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:29:55+08:00 ] ::1 /123123/index.php/home/order/index?_=1542335385986
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0120s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:30:10+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542335399749
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542335410' WHERE `id` = 1 [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','删除成功','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Order/update.html','2018-11-16 10:30:10','0.0.0.0') [ RunTime:0.0150s ]
+
+[ 2018-11-16T10:30:36+08:00 ] ::1 /123123/index.php/home/medicine/clear?_=1542335436033
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:30:52+08:00 ] ::1 /123123/index.php?s=/Home/Medicine/clear_ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0120s ]
+SQL: SELECT `price` FROM `xy_medicine` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-11-16T10:33:38+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542335609614
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0240s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0340s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T10:38:02+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542335872038
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+
+[ 2018-11-16T10:38:47+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542335918447
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0110s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+
+[ 2018-11-16T10:39:22+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542335952000
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0110s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T10:39:45+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542335976650
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:44:29+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542336259686
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:48:40+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542336511152
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_order`  [ RunTime:0.0100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:49:50+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542336580023
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0170s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xy_order`  [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T10:50:31+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542336621063
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0110s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order`  [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T10:51:29+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542336679102
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0230s ]
+SQL: SELECT * FROM `xy_order`  [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:51:57+08:00 ] ::1 /123123/index.php/home/order/index?_=1542336706762
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0110s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:52:23+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542336734118
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xy_order`  [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:53:02+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542336773057
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0300s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0340s ]
+SQL: SELECT * FROM `xy_order`  [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T10:55:14+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542336904667
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0280s ]
+SQL: SELECT * FROM `xy_order`  [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\af8dcbb7d7a6c72fec8af8c94fe3b8aa.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T10:55:25+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/navTabId/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-11-16T11:00:32+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542337223594
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542337232' WHERE `id` = 1 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','删除失败','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Order/update.html','2018-11-16 11:00:32','0.0.0.0') [ RunTime:0.0140s ]
+
+[ 2018-11-16T11:01:10+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542337261599
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0110s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0190s ]
+SQL: SELECT * FROM `xy_order`  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0110s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542337270' WHERE `id` = 1 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0140s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','删除成功1','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Order/update.html','2018-11-16 11:01:10','0.0.0.0') [ RunTime:0.0160s ]
+
+[ 2018-11-16T11:01:25+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337274793
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0110s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:02:20+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337331626
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0120s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:02:32+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542337342710
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_order`  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542337352' WHERE `id` = 1 [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','删除成功1','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Order/update.html','2018-11-16 11:02:32','0.0.0.0') [ RunTime:0.0120s ]
+
+[ 2018-11-16T11:03:44+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337414499
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0150s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-11-16T11:04:12+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337442507
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0160s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0150s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:04:23+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542337454278
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542337463' WHERE `id` = 1 [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','删除成功1','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Order/update.html','2018-11-16 11:04:23','0.0.0.0') [ RunTime:0.0160s ]
+
+[ 2018-11-16T11:06:08+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order&_=1542337557382
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542337568' WHERE `id` = 1 [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','删除成功1','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Order/update.html','2018-11-16 11:06:08','0.0.0.0') [ RunTime:0.0140s ]
+
+[ 2018-11-16T11:06:20+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337570146
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:06:42+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337591474
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:06:55+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542337615' WHERE `id` = 1 [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','删除成功1','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Order/update.html','2018-11-16 11:06:55','0.0.0.0') [ RunTime:0.0130s ]
+
+[ 2018-11-16T11:07:06+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542337626' WHERE `id` = 1 [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','删除失败0','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Order/update.html','2018-11-16 11:07:06','0.0.0.0') [ RunTime:0.0140s ]
+
+[ 2018-11-16T11:07:15+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337615337
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:07:26+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337615333
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:07:34+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337626222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T11:07:44+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337626224
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:08:38+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337709138
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0120s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-16T11:08:55+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337726122
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0120s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:09:09+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542337749' WHERE `id` = 1 [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0140s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','删除成功1','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Order/update.html','2018-11-16 11:09:09','0.0.0.0') [ RunTime:0.0150s ]
+
+[ 2018-11-16T11:09:19+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337749607
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0170s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-11-16T11:09:30+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337749611
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:11:54+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337905107
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0110s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:12:12+08:00 ] ::1 /123123/index.php?s=/Home/Order/update/id/1/navTabId/Order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: UPDATE `xy_order` SET `payment_status`='2' WHERE ( id=1 ) [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0150s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542337932' WHERE `id` = 1 [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','添加成功','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Order/update.html','2018-11-16 11:12:12','0.0.0.0') [ RunTime:0.0110s ]
+
+[ 2018-11-16T11:12:22+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337932629
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0110s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0140s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T11:12:33+08:00 ] ::1 /123123/index.php/home/order/index?_=1542337932632
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0120s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T17:39:39+08:00 ] ::1 /123123/index.php/home/order/index?_=1542361170636
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\OrderController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_order` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_order` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_address` [ RunTime:0.0130s ]
+SQL: SELECT `area` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `address` FROM `xy_address` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 8 行.
+NOTIC: [8] Undefined index: start_time  D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\f0a928cac3830319ed574d5e0d8e74de.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T17:40:22+08:00 ] ::1 /123123/index.php/home/medicine/index?_=1542361213677
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\MedicineController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_medicine` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_medicine` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\7c3a8b3c38edbde89f182c8221e631c9.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T17:40:37+08:00 ] ::1 /123123/index.php?s=/Home/Medicine/edit/id/5/navTabId/Medicine&_=1542361227752
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_mtype`  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_medicine` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T17:41:15+08:00 ] ::1 /123123/index.php?s=/Home/Medicine/edit/navTabId/Medicine
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0150s ]
+SQL: UPDATE `xy_medicine` SET `name`='test',`num`='test',`price`='test',`count`='test',`typeid`='32',`format`='test',`mtype`='test',`pzwh`='test',`start_time`='1541865600',`upto`='test',`end_time`='1543507200',`company`='test',`blfy`='test',`main`='test',`use`='test',`storage`='test',`cure`='test' WHERE `id` = 5 [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0150s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542361275' WHERE `id` = 1 [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','编辑成功','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Medicine/edit.html','2018-11-16 17:41:15','0.0.0.0') [ RunTime:0.0140s ]
+
+[ 2018-11-16T17:41:26+08:00 ] ::1 /123123/index.php/home/medicine/index?_=1542361275924
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\MedicineController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_medicine` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_medicine` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=32 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\7c3a8b3c38edbde89f182c8221e631c9.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-11-16T17:41:47+08:00 ] ::1 /123123/index.php?s=/Home/Medicine/edit/id/5/navTabId/Medicine&_=1542361297883
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_mtype`  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_medicine` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T17:42:21+08:00 ] ::1 /123123/index.php?s=/Home/Medicine/edit/navTabId/Medicine
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_medicine` SET `name`='test',`num`='300',`price`='20',`count`='test',`typeid`='32',`format`='test',`mtype`='test',`pzwh`='test',`start_time`='1541865600',`upto`='test',`end_time`='1543507200',`company`='test',`blfy`='test',`main`='test',`use`='test',`storage`='test',`cure`='test' WHERE `id` = 5 [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0140s ]
+SQL: UPDATE `xy_user` SET `update_time`='1542361340' WHERE `id` = 1 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0140s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','编辑成功','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/123123/index.php?s=/Home/Medicine/edit.html','2018-11-16 17:42:20','0.0.0.0') [ RunTime:0.0130s ]
+
+[ 2018-11-16T17:42:31+08:00 ] ::1 /123123/index.php/home/medicine/index?_=1542361341119
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\123123\App\Home\Controller\MedicineController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_medicine` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_medicine` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `xy_mtype` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=32 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_mtype` WHERE ( id=38 ) LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\7c3a8b3c38edbde89f182c8221e631c9.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-16T17:49:39+08:00 ] ::1 /123123/index.php/home/yaoshang/index?_=1542361769742
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_yaoshang` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 285 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 305 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\123123\App\Common\Controller\BaseController.class.php 第 321 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_yaoshang` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_yaoshang` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\7005881a14e93750ce42e017a85febe6.php 第 8 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\7005881a14e93750ce42e017a85febe6.php 第 42 行.
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_medicine` WHERE ( uid=20 ) LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\7005881a14e93750ce42e017a85febe6.php 第 42 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_medicine` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\123123\App\Runtime\Cache\Home\7005881a14e93750ce42e017a85febe6.php 第 42 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_medicine` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.0120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

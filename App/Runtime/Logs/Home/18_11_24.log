@@ -1,0 +1,85 @@
+[ 2018-11-24T08:57:04+08:00 ] ::1 /weiling/index.php/home/api/ECG_patient_add?token=a0c2e3a2263b2672ec0c76b1abf85e39&name=%E5%BC%A0%E4%B8%89&idcard=230206199911111212&bodyweight=60&birthday=13234135&phone=12311223355&sex=%E7%94%B7&marriage=%E5%B7%B2%E5%A9%9A&symptom=456465415456454
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_patient` [ RunTime:0.0150s ]
+SQL: INSERT INTO `xy_patient` (`uid`,`name`,`idcard`,`body_weight`,`birthday`,`phone`,`sex`,`marriage`,`symptom`) VALUES ('23','张三','230206199911111212','60','13234135','12311223355','男','已婚','456465415456454') [ RunTime:0.0240s ]
+
+[ 2018-11-24T08:57:13+08:00 ] ::1 /weiling/index.php?s=/Home/index/main.html&_=1543021015720
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_quxiang` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_quxiang` ORDER BY id desc LIMIT 5   [ RunTime:0.0140s ]
+SQL: SELECT `depname` FROM `xy_user` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_renwu` [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 79 行.
+SQL: SELECT * FROM `xy_renwu` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_tongzhi` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 108 行.
+SQL: SELECT * FROM `xy_tongzhi` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_cust` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_cust` WHERE ( `xiaci` >= '2018-11-17' AND `xiaci` <= '2018-12-24'  ) AND (  `uid` = '1' OR `juid` LIKE '%1%' ) LIMIT 5   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_fahuo` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_fahuo` ORDER BY id desc LIMIT 5   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_hetong` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_hetong` WHERE (  `uid` = '1' OR `juid` LIKE '%1%' ) AND ( `jztime` >= '2018-11-17' AND `jztime` <= '2018-12-24'  ) LIMIT 5   [ RunTime:0.0140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.211012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.211012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-24T08:57:23+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_add?token=a0c2e3a2263b2672ec0c76b1abf85e39&addid=31&content=8,1&type=1&cartid=%22%22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0130s ]
+SQL: SELECT `uid` FROM `xy_medicine` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_yaoshang` [ RunTime:0.0120s ]
+SQL: SELECT `name` FROM `xy_yaoshang` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `id` FROM `xy_yaoshang` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `price` FROM `xy_medicine` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `img` FROM `xy_medicine` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_medicine` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `format` FROM `xy_medicine` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_commodity` (`seller_id`,`seller_name`,`mid`,`num`,`name`,`format`,`img`,`numbering`,`d_price`,`price`) VALUES ('2','药商2','8','1','达喜 铝碳酸镁咀嚼片（OTC）','500mg*20片','/2018-11-21/5bf4d1998bfa3.png','2018112457559810','20','20') [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_order` (`numbering`,`z_price`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`) VALUES ('2018112457559810','20','0','0','0','1543021043','0','31') [ RunTime:0.0170s ]
+
+[ 2018-11-24T11:51:28+08:00 ] ::1 /weiling/index.php/home/api/cart_list?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0290s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_cart` [ RunTime:0.0260s ]
+SQL: SELECT `seller_name`,`seller_id` FROM `xy_cart` WHERE ( token=23 )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_cart` WHERE `seller_name` = '药商2' AND `token` = '23'  [ RunTime:0.0250s ]
+SQL: SELECT * FROM `xy_cart` WHERE `seller_name` = '药商1' AND `token` = '23'  [ RunTime:0.0110s ]
+

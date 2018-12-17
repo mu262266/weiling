@@ -1,0 +1,70 @@
+<div class="bjui-pageHeader">
+<form id="pagerForm" data-toggle="ajaxsearch" action="__URL__" method="post">
+	
+	<input type="hidden" name="pageSize" value="{$numPerPage}">
+    <input type="hidden" name="pageCurrent" value="{$_REQUEST['pageNum']|default=1}">
+	 
+        <div class="bjui-searchBar">
+            <label>关键词：</label><input type="text" value="{$_REQUEST['keys']}" name="keys" class="form-control" size="15" />
+			<label>部门:</label>
+            <select name="depname" data-toggle="selectpicker">
+			<option value="">全部</option>
+			    <foreach name="dlist" item="v">
+			    <option value="{$v.depname}"  <if condition="$v.depname EQ $_REQUEST['depname'] ">selected<else/>{$_REQUEST['depname']}</if> >{$v.depname}</option>
+				 </foreach>
+            </select>&nbsp;
+			<label>职位:</label>
+            <select name="posname" data-toggle="selectpicker">
+			<option value="">全部</option>
+			    <foreach name="plist" item="v">
+			    <option value="{$v.posname}"  <if condition="$v.posname EQ $_REQUEST['posname'] ">selected<else/>{$_REQUEST['posname']}</if> >{$v.posname}</option>
+				 </foreach>
+            </select>&nbsp;
+             <button type="submit"  class="btn-default" data-icon="search">查询</button>
+              <a class="btn btn-orange" href="javascript:;" onclick="$(this).navtab('reloadForm', true);" data-icon="undo">清空查询</a>
+		</div> 
+</form>
+    
+</div>
+<div class="bjui-pageContent tableContent">
+     <table data-toggle="tablefixed" data-width="100%" data-layout-h="0" data-nowrap="true">
+        <thead>
+            <tr>
+            <th width="30" height="30"></th>
+            <th>编号</th>
+            <th>真实姓名</th>
+		    <th>所在部门</th>
+	    	<th>担任职位</th>
+		    <th>固定电话</th>
+            <th>移动电话</th>
+            <th>电子邮箱</th>
+			<th>QQ</th>
+            <th>内线/短号</th>
+            </tr>
+        </thead>
+        <tbody>
+
+          <volist id="v" name="list">
+          <tr>
+		   <td></td>
+		   <td>{$v.id}</td>
+           <td>{$v.truename}</td>
+		   <td>{$v.depname} </td>
+		   <td>{$v.posname}</td>
+		   <td>{$v.tel}</td>
+           <td>{$v.phone}</td>
+           <td>{$v.email}</td>
+		   <td>{$v.qq}</td>
+           <td>{$v.neixian}</td>
+         </tr> 
+          </volist>
+        </tbody>
+    </table>
+</div>
+<div class="bjui-pageFooter">
+        <div class="pages">
+            <span>共 {$totalCount} 条  每页 {$numPerPage} 条</span>
+        </div>
+	    <div class="pagination-box" data-toggle="pagination" data-total="{$totalCount}" data-page-size="{$numPerPage}" data-page-current="{$currentPage}">
+        </div>
+</div>

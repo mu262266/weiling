@@ -1,0 +1,63 @@
+<div class="bjui-pageContent tableContent">
+        <div class="pageFormContent" style="margin:1px;" data-layout-h="0">
+		          <ul class="nav nav-tabs" role="tablist">
+                   <li class="active"><a href="#sms" role="tab" data-toggle="tab">短信管理</a></li>
+					<li><a href='#smscz10' role='tab' data-toggle='tab'>短信充值</a></li><li><a href='#smsfs11' role='tab' data-toggle='tab'>发送记录</a></li>
+                  </ul>
+		 <div class="tab-content" style="border:0">
+           <div class="tab-pane fade active in" id="sms"><table class="table table-bordered table-striped table-hover">
+           <tbody>
+		   <tr><td><label for='id_input' class='control-label x85'>ID:</label>{$Rs.id}</td><td><label for='title_input' class='control-label x85'>客户名称:</label>{$Rs.title}</td></tr>
+<tr><td><label for='dianhua_input' class='control-label x85'>联系电话:</label>{$Rs.dianhua}</td><td><label for='url_input' class='control-label x85'>使用域名:</label>{$Rs.url}</td></tr>
+<tr><td><label for='name_input' class='control-label x85'>短信账号:</label>{$Rs.name}({$Rs.name|md5=###})</td><td><label for='yzm_input' class='control-label x85'>发送验证码:</label>{$Rs.yzm}({$Rs.yzm|md5=###})</td></tr>
+<tr><td><label for='yue_input' class='control-label x85'>短信余额:</label>{$Rs.yue}</td><td><label for='uname_input' class='control-label x85'>添加人:</label>{$Rs.uname}</td></tr>
+<tr><td><label for='addtime_input' class='control-label x85'>添加时间:</label>{$Rs.addtime}</td><td><label for='uuname_input' class='control-label x85'>更新人:</label>{$Rs.uuname}</td></tr>
+<tr><td><label for='updatetime_input' class='control-label x85'>更新时间:</label>{$Rs.updatetime}</td>
+           </tbody>
+          </table>
+		  </div>
+		  
+		 <div class='tab-pane fade' id='smscz10'><table class='table table-bordered table-striped table-hover'><php>$smsczlist=M('smscz')->where(array('cid'=>$Rs['id']))->order('id desc')->limit(50)->select();</php> <thead> <tr><th>ID</th>
+<th height=30>用户ID</th>
+<th height=30>客户名称</th>
+<th>充值金额</th>
+<th>充值条数</th>
+<th height=30>备注</th>
+<th height=30>添加人</th>
+<th>添加时间</th>
+<th>详细</th></tr></thead><tbody><foreach name='smsczlist' item='smsczv'><tr><td>{$smsczv.id}</td>
+<td>{$smsczv.cid|msubstr=###,0,20}</td>
+<td>{$smsczv.title|msubstr=###,0,20}</td>
+<td>{$smsczv.jine}</td>
+<td>{$smsczv.shuliang}</td>
+<td>{$smsczv.beizhu|msubstr=###,0,20}</td>
+<td>{$smsczv.uname|msubstr=###,0,20}</td>
+<td>{$smsczv.addtime}</td>
+  <td><a href='__MODULE__/smscz/view/id/{$smsczv['id']}/navTabId/{:CONTROLLER_NAME}'  data-toggle='dialog' data-width='800' data-height='500' data-id='dialog-masksmscz' data-mask='true' >详细</a></td></tr> </foreach> </tbody> </table></div><div class='tab-pane fade' id='smsfs11'><table class='table table-bordered table-striped table-hover'><php>$smsfslist=M('smsfs')->where(array('cid'=>$Rs['id']))->order('id desc')->limit(100)->select();</php> <thead> <tr><th>ID</th>
+<th height=30>用户ID</th>
+<th height=30>短信账户</th>
+<th height=30>接收手机</th>
+<th height=30>短信内容</th>
+<th height=30>来源网址</th>
+<th height=30>发送结果</th>
+<th height=30>来源IP</th>
+<th>发送时间</th>
+<th>详细</th></tr></thead><tbody><foreach name='smsfslist' item='smsfsv'><tr><td>{$smsfsv.id}</td>
+<td>{$smsfsv.cid|msubstr=###,0,20}</td>
+<td>{$smsfsv.name|msubstr=###,0,20}</td>
+<td>{$smsfsv.phone|msubstr=###,0,20}</td>
+<td>{$smsfsv.content|msubstr=###,0,20}</td>
+<td>{$smsfsv.url|msubstr=###,0,20}</td>
+<td>{$smsfsv.jieguo|msubstr=###,0,20}</td>
+<td>{$smsfsv.ip|msubstr=###,0,20}</td>
+<td>{$smsfsv.addtime}</td>
+  <td><a href='__MODULE__/smsfs/view/id/{$smsfsv['id']}/navTabId/{:CONTROLLER_NAME}'  data-toggle='dialog' data-width='800' data-height='500' data-id='dialog-masksmsfs' data-mask='true' >详细</a></td></tr> </foreach> </tbody> </table></div>
+		   
+		 </div>
+        </div>
+</div>
+<div class="bjui-pageFooter">
+    <ul>
+       <li><button type="button" class="btn-close" data-icon="close">关闭</button></li>
+    </ul>
+</div>

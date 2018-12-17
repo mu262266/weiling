@@ -1,0 +1,907 @@
+[ 2018-11-26T08:36:51+08:00 ] ::1 /weiling/index.php/home/api/cart_list?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_cart` [ RunTime:0.0140s ]
+SQL: SELECT `seller_name`,`seller_id` FROM `xy_cart` WHERE ( token=23 )  [ RunTime:0.0150s ]
+NOTIC: [2] end() expects parameter 1 to be array, null given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 917 行.
+NOTIC: [2] array_keys() expects parameter 1 to be array, null given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 917 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 921 行.
+NOTIC: [8] Undefined variable: temp D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 931 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 931 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 935 行.
+NOTIC: [8] Undefined variable: output D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 955 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 624 行.
+NOTIC: [8] Undefined variable: seller_name2 D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 627 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 628 行.
+
+[ 2018-11-26T08:37:06+08:00 ] ::1 /weiling/index.php?s=/Home/index/main.html&_=1543192614635
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_quxiang` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_quxiang` ORDER BY id desc LIMIT 5   [ RunTime:0.0140s ]
+SQL: SELECT `depname` FROM `xy_user` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_renwu` [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 79 行.
+SQL: SELECT * FROM `xy_renwu` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_tongzhi` [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 108 行.
+SQL: SELECT * FROM `xy_tongzhi` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_cust` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_cust` WHERE ( `xiaci` >= '2018-11-19' AND `xiaci` <= '2018-12-26'  ) AND (  `uid` = '1' OR `juid` LIKE '%1%' ) LIMIT 5   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_fahuo` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_fahuo` ORDER BY id desc LIMIT 5   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_hetong` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_hetong` WHERE (  `uid` = '1' OR `juid` LIKE '%1%' ) AND ( `jztime` >= '2018-11-19' AND `jztime` <= '2018-12-26'  ) LIMIT 5   [ RunTime:0.0170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.210012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.210012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T08:37:14+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_add?token=a0c2e3a2263b2672ec0c76b1abf85e39&addid=31&content=8,1&type=1&cartid=%22%22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0150s ]
+SQL: SELECT `uid` FROM `xy_medicine` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_yaoshang` [ RunTime:0.0150s ]
+SQL: SELECT `name` FROM `xy_yaoshang` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_yaoshang` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT `price` FROM `xy_medicine` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `img` FROM `xy_medicine` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT `name` FROM `xy_medicine` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT `format` FROM `xy_medicine` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0150s ]
+SQL: INSERT INTO `xy_commodity` (`seller_id`,`seller_name`,`mid`,`num`,`name`,`format`,`img`,`numbering`,`d_price`,`price`,`uid`) VALUES ('2','药商2','8','1','达喜 铝碳酸镁咀嚼片（OTC）','500mg*20片','/2018-11-21/5bf4d1998bfa3.png','2018112650514850','20','20','23') [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0150s ]
+SQL: INSERT INTO `xy_order` (`numbering`,`z_price`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`) VALUES ('2018112650514850','20','0','0','0','1543192634','0','31','23') [ RunTime:0.0180s ]
+
+[ 2018-11-26T11:43:17+08:00 ] ::1 /weiling/index.php/home/api/departmentlist_one
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_department` [ RunTime:0.0130s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'level' in 'where clause'
+
+[ 2018-11-26T13:11:59+08:00 ] ::1 /weiling/index.php/home/api/departmentdoctor_list%EF%BC%9Fid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:departmentdoctor_list？id=3
+
+[ 2018-11-26T13:12:16+08:00 ] ::1 /weiling/index.php/home/api/departmentdoctor_list?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( did=3 )  [ RunTime:0.0120s ]
+
+[ 2018-11-26T13:13:11+08:00 ] ::1 /weiling/index.php/home/api/departmentdoctor_list?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( did=4 )  [ RunTime:0.0140s ]
+
+[ 2018-11-26T14:01:48+08:00 ] ::1 /weiling/index.php/home/api/traininglist_one
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `xy_training` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `xy_training` WHERE ( level=0 )  [ RunTime:0.0150s ]
+
+[ 2018-11-26T14:02:20+08:00 ] ::1 /weiling/index.php/home/api/traininglist_two
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+
+[ 2018-11-26T14:02:32+08:00 ] ::1 /weiling/index.php/home/api/traininglist_two?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-26T14:02:35+08:00 ] ::1 /weiling/index.php/home/api/traininglist_two?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-11-26T14:03:14+08:00 ] ::1 /weiling/index.php/home/api/traininglist_two?pid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_training` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `xy_training` WHERE ( pid=1 )  [ RunTime:0.0150s ]
+
+[ 2018-11-26T14:22:00+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chuku`  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=10 )  [ RunTime:0.0140s ]
+
+[ 2018-11-26T14:24:13+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xy_chuku`  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=10 )  [ RunTime:0.0150s ]
+
+[ 2018-11-26T14:39:37+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chuku`  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=6 )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_medicine` WHERE ( id=10 )  [ RunTime:0.0140s ]
+
+[ 2018-11-26T15:08:53+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( app_id=23 ) GROUP BY time  [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-11-26T15:10:10+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0130s ]
+SQL: SELECT `time` FROM `xy_chuku` WHERE ( app_id=23 ) GROUP BY time  [ RunTime:0.0140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T15:14:49+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0160s ]
+SQL: SELECT `time` FROM `xy_chuku` WHERE ( app_id=23 ) GROUP BY time  [ RunTime:0.0120s ]
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1429 行.
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+
+[ 2018-11-26T15:17:04+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0160s ]
+SQL: SELECT `time` FROM `xy_chuku` WHERE ( app_id=23 ) GROUP BY time  [ RunTime:0.0150s ]
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1429 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '['time'] )' at line 1
+
+[ 2018-11-26T15:17:44+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT `time` FROM `xy_chuku` WHERE ( app_id=23 ) GROUP BY time  [ RunTime:0.0130s ]
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1429 行.
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+
+[ 2018-11-26T15:50:31+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( app_id=23 ) GROUP BY time  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543202152 )  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543212978 )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543213031 )  [ RunTime:0.0140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-26T16:18:59+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( app_id=23 ) GROUP BY time  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543202152 )  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543212978 )  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543213031 )  [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T16:22:06+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT `time` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_chuku`  [ RunTime:0.0140s ]
+
+[ 2018-11-26T16:23:09+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0160s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0160s ]
+SQL: SELECT `time` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chuku`  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543202152 )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543212978 )  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543213031 )  [ RunTime:0.0140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T16:24:34+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT `time` FROM `xy_chuku` WHERE ( app_id=23 ) LIMIT 1   [ RunTime:0.0150s ]
+NOTIC: [2] end() expects parameter 1 to be array, string given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 917 行.
+NOTIC: [2] array_keys() expects parameter 1 to be array, null given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 917 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 921 行.
+NOTIC: [8] Undefined variable: temp D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 931 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 931 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 935 行.
+NOTIC: [8] Undefined variable: output D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 955 行.
+SQL: SELECT * FROM `xy_chuku`  [ RunTime:0.0130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-26T16:24:54+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0160s ]
+SQL: SELECT `time` FROM `xy_chuku` WHERE ( app_id=23 ) LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [2] end() expects parameter 1 to be array, string given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 917 行.
+NOTIC: [2] array_keys() expects parameter 1 to be array, null given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 917 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 921 行.
+NOTIC: [8] Undefined variable: temp D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 931 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 931 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 935 行.
+NOTIC: [8] Undefined variable: output D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 955 行.
+SQL: SELECT * FROM `xy_chuku`  [ RunTime:0.0140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T16:26:19+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT `time` FROM `xy_chuku` WHERE ( app_id=23 ) LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2018-11-26T16:27:32+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined variable: temp D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 931 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 931 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 935 行.
+NOTIC: [8] Undefined variable: output D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 955 行.
+SQL: SELECT `id`,`name`,`phone`,`address`,`worker`,`beizhu`,`medicine`,`app_id`,`price`,`num` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-11-26T16:28:26+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+SQL: SELECT `time` FROM `xy_chuku`  [ RunTime:0.0150s ]
+NOTIC: [2] array_keys() expects parameter 1 to be array, string given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 917 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+SQL: SELECT * FROM `xy_chuku`  [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T16:29:18+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`name`,`phone`,`address`,`worker`,`beizhu`,`medicine`,`app_id`,`price`,`num` FROM `xy_chuku` LIMIT 1   [ RunTime:0.0160s ]
+NOTIC: [2] array_keys() expects parameter 1 to be array, string given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 917 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+NOTIC: [2] join(): Invalid arguments passed D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 923 行.
+SQL: SELECT * FROM `xy_chuku`  [ RunTime:0.0140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T16:29:38+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0160s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`name`,`phone`,`address`,`worker`,`beizhu`,`medicine`,`app_id`,`price`,`num` FROM `xy_chuku`  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xy_chuku`  [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T16:30:37+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_chuku` WHERE `id` = 0  [ RunTime:0.0140s ]
+NOTIC: [2] end() expects parameter 1 to be array, null given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 917 行.
+NOTIC: [2] array_keys() expects parameter 1 to be array, null given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 917 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 921 行.
+NOTIC: [8] Undefined variable: temp D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 931 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 931 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 935 行.
+NOTIC: [8] Undefined variable: output D:\phpStudy\WWW\weiling\App\Common\Common\function.php 第 955 行.
+SQL: SELECT * FROM `xy_chuku`  [ RunTime:0.0140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T16:32:19+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( app_id=23 ) GROUP BY time  [ RunTime:0.0250s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543202152 )  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543212978 )  [ RunTime:0.0260s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543213031 )  [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T16:32:53+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0290s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( app_id=23 ) GROUP BY time  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543202152 )  [ RunTime:0.0240s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543212978 )  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543213031 )  [ RunTime:0.0260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T16:33:32+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0160s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( app_id=23 ) GROUP BY time  [ RunTime:0.0250s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543202152 )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543212978 )  [ RunTime:0.0250s ]
+SQL: SELECT * FROM `xy_chuku` WHERE ( time=1543213031 )  [ RunTime:0.0160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T17:02:26+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a' in 'field list'
+
+[ 2018-11-26T17:03:03+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a' in 'field list'
+
+[ 2018-11-26T17:03:33+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0170s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`worker`,`beizhu` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T17:07:10+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`worker`,`beizhu` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 970 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 970 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 970 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-26T17:08:29+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0160s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`worker`,`beizhu` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 971 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 971 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 971 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-26T17:09:25+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`worker`,`beizhu` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 971 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 971 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 971 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T17:10:01+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`worker`,`beizhu` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 971 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 972 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 971 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 972 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 971 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 972 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T17:10:45+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`worker`,`beizhu` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 972 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 972 行.
+NOTIC: [8] Undefined index: $k D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 972 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T17:11:23+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0280s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0270s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`worker`,`beizhu` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T17:12:22+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`worker`,`beizhu` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-26T17:14:29+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`worker`,`beizhu` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0120s ]
+SQL: SELECT `medicine` FROM `xy_chuku` WHERE ( time=1543202152 )  [ RunTime:0.0140s ]
+SQL: SELECT `medicine` FROM `xy_chuku` WHERE ( time=1543212978 )  [ RunTime:0.0150s ]
+SQL: SELECT `medicine` FROM `xy_chuku` WHERE ( time=1543213031 )  [ RunTime:0.0140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T17:29:08+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0160s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`worker`,`beizhu` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0150s ]
+SQL: SELECT `medicine`,`num`,`price` FROM `xy_chuku` WHERE ( time=1543202152 )  [ RunTime:0.0150s ]
+SQL: SELECT `medicine`,`num`,`price` FROM `xy_chuku` WHERE ( time=1543212978 )  [ RunTime:0.0160s ]
+SQL: SELECT `medicine`,`num`,`price` FROM `xy_chuku` WHERE ( time=1543213031 )  [ RunTime:0.0120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T18:20:32+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-26T18:23:19+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0160s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-26T18:25:23+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0160s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-11-26T18:26:24+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-11-26T18:34:02+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0160s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-11-26T18:34:44+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`beizhu`,`worker` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-26T18:36:04+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`beizhu`,`worker` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-26T18:37:03+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0150s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`beizhu`,`worker` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chukus` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chukus` WHERE ( time=1543044137 )  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_chukus` WHERE ( time=1543044137 )  [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-11-26T18:38:28+08:00 ] ::1 /weiling/index.php/home/api/medicine_outlist?token=a0c2e3a2263b2672ec0c76b1abf85e39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0150s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'a0c2e3a2263b2672ec0c76b1abf85e39' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_chuku` [ RunTime:0.0140s ]
+SQL: SELECT `time`,`name`,`phone`,`address`,`beizhu`,`worker` FROM `xy_chuku` WHERE ( app_id=23 )  [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xy_chukus` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chukus` WHERE ( time=1543044137 )  [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_chukus` WHERE ( time=1543044137 )  [ RunTime:0.0130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

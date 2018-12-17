@@ -1,0 +1,192 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>药品详情</title>
+
+<link type="text/css"  href="__PUBLIC__/css/rui1.css" rel="stylesheet">
+<link href="__PUBLIC__/css/ectouch001.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/js/TouchSlide.js"></script>
+
+</head>
+<body style="background:#fff; margin:0; padding:0">
+
+<!--导航轮播开始-->
+ 
+<div id="focus" class="focus region">
+  <div class="hd" style="display:none">
+    <ul>
+    </ul>
+  </div>
+  <div class="bd">
+    
+<ul>
+  <li><a href='' target='_blank'><img src="__UPLOAD__/Public{$list.img}"  style=" width:100%; height:220px"/></a></li>
+</ul>
+  </div>
+</div>
+<!--<script type="text/javascript">
+TouchSlide({ 
+	slideCell:"#focus",
+	titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+	mainCell:".bd ul", 
+	effect:"leftLoop", 
+	autoPlay:true,//自动播放
+	autoPage:true //自动分页
+});
+</script>-->
+
+<div id=content class="wrap">
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+
+<div style="clear:both"></div>
+
+<h2 class="headtitle">
+<span style="font-size:14px; color:#333; position:relative; top:-5px">{$list.name}{$list.format}</span>
+</h2>
+<h2 class="headtitle">
+<span class="more1" style="float:left; color:#333; font-size:14px; position:relative; top:-5px">药品价格：<a href="#" style="font-size:18px;">￥{$list.price}元</a></span>
+</h2>
+<h2 class="headtitle">
+<span style="font-size:14px; color:#333; position:relative; top:-5px">生产厂家：{$list.company}</span>
+</h2>
+<div style="clear:both"></div>
+</div>
+
+
+
+<div style="clear:both"></div>
+<h2 class="headtitle" style="border-left:#438acf solid 5px; width:99%; border-bottom:none">
+<span>基本参数</span>
+</h2>
+
+<div class="everyday">
+<p><span style="margin-left:8px">生产日期：{$list.start_time}</span></p>
+<p><span style="margin-left:8px">有效期限：{$list.upto}</span></p>
+<p><span style="margin-left:8px">药品规格：{$list.format}</span></p>
+<p><span style="margin-left:8px">药品剂型：{$list.mtype}</span></p>
+<div style="clear:both"></div>
+</div>
+
+
+
+
+
+<div style="clear:both"></div>
+<h2 class="headtitle" style="border-left:#438acf solid 5px; width:99%; border-bottom:none">
+<span>药品详情</span>
+</h2>
+<style>
+    .pzcs{ width:100%; height:auto; margin-left:5px; margin:10px auto}
+    .pzcs h5{ width:100%; height:45px; font-family:"微软雅黑"; background-color:#CCCCCC; text-align:center; font-size:16px; line-height:45px}
+	.pzcs table{ width:100%; font-family:"微软雅黑"; font-size:16px;}
+
+	.pzcs table tr td{ padding-top:5px; padding-bottom:5px; padding-left:10px;border:#CCCCCC thin solid; border-left:none; border-right:#CCCCCC thin solid}
+	.pzcs table tr td:first-child{border-left:#CCCCCC thin solid; width:22%; font-family:"微软雅黑"; font-size:16px; color:#666666}
+	.pzcs table tr td:last-child{ text-align:left; font-family:"微软雅黑"; font-size:14px!important; color:#666}
+</style>
+
+
+<div>
+<div class="pzcs">
+
+<table align="center" bgcolor="#FFFFFF" >
+
+<tr>
+<td>药品名称</td>
+<td>{$list.name}</td>
+</tr>
+
+<tr>
+<td>拼音简码</td>
+<td>{$list.pyjm}</td>
+</tr>
+
+<tr>
+<td>主要成分</td>
+<td>{$list.main}</td>
+</tr>
+
+<tr>
+<td>规格型号</td>
+<td>{$list.format}</td>
+</tr>
+
+<tr>
+<td>用法用量</td>
+<td>{$list.use}</td>
+</tr>
+
+
+<tr>
+<td>药品剂型</td>
+<td>{$list.mtype}</td>
+</tr>
+
+<tr>
+<td>药品单位</td>
+<td>{$list.count}</td>
+</tr>
+
+
+
+<tr>
+<td>批准文号</td>
+<td>{$list.pzwh}</td>
+</tr>
+
+
+
+<tr>
+<td>生产日期</td>
+<td>{$list.start_time}</td>
+</tr>
+
+
+<tr>
+<td>有效期限</td>
+<td>{$list.upto}</td>
+</tr>
+
+
+<tr>
+<td>贮藏方式</td>
+<td>{$list.storage}</td>
+</tr>
+
+<tr>
+<td>生产厂家</td>
+<td>{$list.company}</td>
+</tr>
+
+<tr>
+<td>药品批号</td>
+<td>{$list.ypph}</td>
+</tr>
+
+
+
+</table>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

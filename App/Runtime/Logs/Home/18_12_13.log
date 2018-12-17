@@ -1,0 +1,1194 @@
+[ 2018-12-13T08:34:43+08:00 ] ::1 /weiling/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\IndexController.class.php 第 5 行.
+
+[ 2018-12-13T08:34:43+08:00 ] ::1 /weiling/index.php?s=/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-13T08:35:02+08:00 ] ::1 /weiling/index.php?s=/Home/Public/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE `username` = 'test' AND `status` = 1 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_user` WHERE `username` = 'test' LIMIT 1   [ RunTime:0.0140s ]
+SQL: UPDATE `xy_user` SET `logintime`='2018-12-13 08:35:02',`loginip`='0.0.0.0',`logins`=logins+1,`update_time`='1544661302' WHERE `id` = 20 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('test','登录成功！','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/weiling/index.php?s=/Home/Public/Login.html','2018-12-13 08:35:02','0.0.0.0') [ RunTime:0.0130s ]
+
+[ 2018-12-13T08:35:12+08:00 ] ::1 /weiling/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE `update_time` > 1544660712 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_msg` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_msg` WHERE `viewtime` < '2000-01-01' AND `juid` = '20' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_menu` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=0 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+SQL: SHOW COLUMNS FROM `xy_auth_group_access` [ RunTime:0.0130s ]
+SQL: SELECT `rules` FROM xy_auth_group_access a INNER JOIN xy_auth_group g on a.group_id=g.id  WHERE ( a.uid='20' and g.status='1' )  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_auth_rule` [ RunTime:0.0130s ]
+SQL: SELECT `condition`,`name` FROM `xy_auth_rule` WHERE `id` IN ('','309','310','311','312','313','318','319','320','321','324','325','326','327','335','336','337','338','339','340','341','342','343','344','345','346','347','348','349','350','353','354','359','360','361','362','363','364','403','365','366','402','367','368','369','370','371','372','373','374','376','377','404','378','379','380','381','384','385','386','387','390','391','392','393','394','398','397','405','537','399','401','406','407','408','409','412','413','414','415','418','490','532','533','491','492','493','494','496','498','499','500','501','502','503','504','505','506','517','518','521','522','523','526','527','528','531','292','294','295','305','306') AND `type` = 1 AND `status` = 1  [ RunTime:0.0130s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\Core\Library\Think\Auth.class.php 第 197 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-13T08:35:23+08:00 ] ::1 /weiling/index.php?s=/Home/index/main.html&_=1544661313205
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_quxiang` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_quxiang` ORDER BY id desc LIMIT 5   [ RunTime:0.0120s ]
+SQL: SELECT `depname` FROM `xy_user` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_renwu` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 157 行.
+SQL: SELECT * FROM `xy_renwu` WHERE `juid` LIKE '%20%' ORDER BY id desc LIMIT 5   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_tongzhi` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 215 行.
+SQL: SELECT * FROM `xy_tongzhi` WHERE `juid` LIKE '%20%' ORDER BY id desc LIMIT 5   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_cust` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_cust` WHERE ( `xiaci` >= '2018-12-06' AND `xiaci` <= '2019-01-13'  ) AND (  `uid` = '20' OR `juid` LIKE '%20%' ) LIMIT 5   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_fahuo` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_fahuo` ORDER BY id desc LIMIT 5   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_hetong` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_hetong` WHERE (  `uid` = '20' OR `juid` LIKE '%20%' ) AND ( `jztime` >= '2018-12-06' AND `jztime` <= '2019-01-13'  ) LIMIT 5   [ RunTime:0.0140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.189011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.189011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-13T08:35:33+08:00 ] ::1 /weiling/index.php?s=/Home/public/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('test','退出成功！','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/weiling/index.php?s=/Home/Public/logout.html','2018-12-13 08:35:23','0.0.0.0') [ RunTime:0.0140s ]
+
+[ 2018-12-13T08:35:33+08:00 ] ::1 /weiling/index.php?s=/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-13T08:35:48+08:00 ] ::1 /weiling/index.php?s=/Home/Public/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0140s ]
+SQL: UPDATE `xy_user` SET `logintime`='2018-12-13 08:35:48',`loginip`='0.0.0.0',`logins`=logins+1,`update_time`='1544661348' WHERE `id` = 1 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','登录成功！','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/weiling/index.php?s=/Home/Public/Login.html','2018-12-13 08:35:48','0.0.0.0') [ RunTime:0.0120s ]
+
+[ 2018-12-13T08:35:58+08:00 ] ::1 /weiling/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE `update_time` > 1544660757 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_msg` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_msg` WHERE `viewtime` < '2000-01-01' AND `juid` = '1' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_menu` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=0 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=216 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=219 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=219 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=217 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=217 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=231 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=231 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=232 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=232 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=218 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=220 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=220 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=222 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=225 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=225 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=226 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=226 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=233 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=233 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=227 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=227 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=228 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=229 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=229 ) ORDER BY sort  [ RunTime:0.0110s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=230 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=230 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=234 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=235 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=235 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+SQL: SELECT * FROM `xy_menu` WHERE ( level=1 and pid=7 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=9 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=9 ) ORDER BY sort  [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 509 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 509 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 509 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=22 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=22 ) ORDER BY sort  [ RunTime:0.0150s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 509 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 509 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 509 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 509 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=24 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=24 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=21 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=21 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=13 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=13 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 499 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `xy_menu` WHERE ( level=2 and pid=179 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=2 and pid=179 ) ORDER BY sort  [ RunTime:0.0130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.633036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.633036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-12-13T08:36:08+08:00 ] ::1 /weiling/index.php?s=/Home/index/main.html&_=1544661358658
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_quxiang` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_quxiang` ORDER BY id desc LIMIT 5   [ RunTime:0.0120s ]
+SQL: SELECT `depname` FROM `xy_user` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_renwu` [ RunTime:0.0110s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 157 行.
+SQL: SELECT * FROM `xy_renwu` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_tongzhi` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 215 行.
+SQL: SELECT * FROM `xy_tongzhi` WHERE `juid` LIKE '%1%' ORDER BY id desc LIMIT 5   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_cust` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_cust` WHERE ( `xiaci` >= '2018-12-06' AND `xiaci` <= '2019-01-13'  ) AND (  `uid` = '1' OR `juid` LIKE '%1%' ) LIMIT 5   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_fahuo` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_fahuo` ORDER BY id desc LIMIT 5   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_hetong` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_hetong` WHERE (  `uid` = '1' OR `juid` LIKE '%1%' ) AND ( `jztime` >= '2018-12-06' AND `jztime` <= '2019-01-13'  ) LIMIT 5   [ RunTime:0.0140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.181010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.181010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-12-13T08:36:17+08:00 ] ::1 /weiling/index.php/home/user/index?_=1544661364507
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 287 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 301 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_user` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0120s ]
+SQL: SELECT DISTINCT  `depname` FROM `xy_user`  [ RunTime:0.0120s ]
+SQL: SELECT DISTINCT  `posname` FROM `xy_user`  [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 8 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: SHOW COLUMNS FROM `xy_auth_group_access` [ RunTime:0.0120s ]
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 19 LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 18 LIMIT 1   [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 17 LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 16 LIMIT 1   [ RunTime:0.0110s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.194011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.195011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-13T08:36:34+08:00 ] ::1 /weiling/index.php?s=/Home/User/edit/id/20/navTabId/User&_=1544661384909
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_auth_group` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 0 AND `type` = 0 ORDER BY sort  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 1 AND `type` = 0 ORDER BY sort  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 14 AND `type` = 0 ORDER BY sort  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 15 AND `type` = 0 ORDER BY sort  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 16 AND `type` = 0 ORDER BY sort  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 24 AND `type` = 0 ORDER BY sort  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant 男 - assumed '男' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\3882e38249fd16ee0842e7f6760bd54d.php 第 25 行.
+SQL: SELECT * FROM `xy_auth_group` WHERE `type` = 1  [ RunTime:0.0140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-13T08:37:29+08:00 ] ::1 /weiling/index.php?s=/Home/User/edit/navTabId/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0110s ]
+SQL: UPDATE `xy_user` SET `username`='test',`truename`='国药控股抚顺有限公司',`sex`='男',`depname`='代理商',`posname`='系统管理员',`tel`='test',`phone`='test',`email`='test',`qq`='test' WHERE `id` = 20 [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0120s ]
+SQL: UPDATE `xy_user` SET `update_time`='1544661449' WHERE `id` = 1 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','编辑成功20','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/weiling/index.php?s=/Home/User/edit.html','2018-12-13 08:37:29','0.0.0.0') [ RunTime:0.0120s ]
+
+[ 2018-12-13T08:37:39+08:00 ] ::1 /weiling/index.php/home/user/index?_=1544661449336
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 287 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 301 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_user` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0150s ]
+SQL: SELECT DISTINCT  `depname` FROM `xy_user`  [ RunTime:0.0130s ]
+SQL: SELECT DISTINCT  `posname` FROM `xy_user`  [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 8 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: SHOW COLUMNS FROM `xy_auth_group_access` [ RunTime:0.0130s ]
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 19 LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 18 LIMIT 1   [ RunTime:0.0110s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 17 LIMIT 1   [ RunTime:0.0110s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 16 LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.195011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.196011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-13T08:37:52+08:00 ] ::1 /weiling/index.php?s=/Home/User/edit/id/20/navTabId/User&_=1544661463708
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_auth_group` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 0 AND `type` = 0 ORDER BY sort  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 1 AND `type` = 0 ORDER BY sort  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 14 AND `type` = 0 ORDER BY sort  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 15 AND `type` = 0 ORDER BY sort  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 16 AND `type` = 0 ORDER BY sort  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `pid` = 24 AND `type` = 0 ORDER BY sort  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant 男 - assumed '男' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\3882e38249fd16ee0842e7f6760bd54d.php 第 25 行.
+SQL: SELECT * FROM `xy_auth_group` WHERE `type` = 1  [ RunTime:0.0110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-13T08:38:10+08:00 ] ::1 /weiling/index.php?s=/Home/User/edit/navTabId/User
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_user` SET `username`='test',`truename`='国药控股抚顺有限公司',`sex`='男',`depname`='代理商',`posname`='技术工程师',`tel`='test',`phone`='test',`email`='test',`qq`='test' WHERE `id` = 20 [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0130s ]
+SQL: UPDATE `xy_user` SET `update_time`='1544661490' WHERE `id` = 1 [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','编辑成功20','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/weiling/index.php?s=/Home/User/edit.html','2018-12-13 08:38:10','0.0.0.0') [ RunTime:0.0270s ]
+
+[ 2018-12-13T08:38:21+08:00 ] ::1 /weiling/index.php/home/user/index?_=1544661491079
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0240s ]
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 268 行.
+NOTIC: [8] Undefined variable: sort D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 287 行.
+NOTIC: [8] Undefined variable: pageCurrent D:\phpStudy\WWW\weiling\App\Common\Controller\BaseController.class.php 第 301 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE (  `id` <> '0' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_user` WHERE (  `id` <> '0' ) ORDER BY `id` desc LIMIT 0,50   [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0140s ]
+SQL: SELECT DISTINCT  `depname` FROM `xy_user`  [ RunTime:0.0240s ]
+SQL: SELECT DISTINCT  `posname` FROM `xy_user`  [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: keys D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 8 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: depname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 12 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Undefined index: posname D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 17 行.
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: SHOW COLUMNS FROM `xy_auth_group_access` [ RunTime:0.0170s ]
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0240s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 19 LIMIT 1   [ RunTime:0.0270s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 18 LIMIT 1   [ RunTime:0.0270s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 17 LIMIT 1   [ RunTime:0.0280s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 16 LIMIT 1   [ RunTime:0.0270s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0250s ]
+NOTIC: [8] Use of undefined constant depname - assumed 'depname' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\64032f3cba072b42246c94805e3ede75.php 第 62 行.
+SQL: DELETE FROM `xy_auth_group_access` WHERE `group_id` = 0 [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.308017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.308017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-13T08:38:30+08:00 ] ::1 /weiling/index.php/home/dep/index?_=1544661494002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\DepController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\DepController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xy_auth_group` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `type` = 1 ORDER BY sort  [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: numPerPage D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\900ef223b9367c1bec965a5321de27a9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-12-13T08:38:40+08:00 ] ::1 /weiling/index.php/home/dep/index?_=1544661505296
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\DepController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\DepController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xy_auth_group` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `type` = 1 ORDER BY sort  [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: numPerPage D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\900ef223b9367c1bec965a5321de27a9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-13T08:38:54+08:00 ] ::1 /weiling/index.php?s=/Home/Dep/editrule/id/18/type/1/navTabId/Dep&_=1544661524078
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\DepController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\DepController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xy_auth_group` [ RunTime:0.0260s ]
+SQL: SELECT `rules` FROM `xy_auth_group` WHERE ( id=18 ) LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_auth_rule` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=0 ) ORDER BY sort  [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 28 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=1 and pid=567 ) ORDER BY sort  [ RunTime:0.0180s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=568 ) ORDER BY sort  [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 28 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=1 and pid=1 ) ORDER BY sort  [ RunTime:0.0260s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=2 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=8 ) ORDER BY sort  [ RunTime:0.0260s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=14 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=20 ) ORDER BY sort  [ RunTime:0.0240s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=261 ) ORDER BY sort  [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=25 ) ORDER BY sort  [ RunTime:0.0260s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=30 ) ORDER BY sort  [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=35 ) ORDER BY sort  [ RunTime:0.0260s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=37 ) ORDER BY sort  [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=39 ) ORDER BY sort  [ RunTime:0.0270s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 41 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\898f30d7a4b84471ce40e16aa02d8777.php 第 35 行.
+SQL: SELECT * FROM `xy_auth_rule` WHERE ( level=2 and pid=489 ) ORDER BY sort  [ RunTime:0.0130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.280016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.280016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-12-13T08:39:40+08:00 ] ::1 /weiling/index.php?s=/Home/Dep/EditRule/navTabId/Dep
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Controller\DepController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\DepController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xy_auth_group` [ RunTime:0.0290s ]
+SQL: UPDATE `xy_auth_group` SET `rules`='567,568,569,570,571,572' WHERE `id` = 18 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0270s ]
+SQL: UPDATE `xy_user` SET `update_time`='1544661580' WHERE `id` = 1 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0270s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','权限设置成功','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/weiling/index.php?s=/Home/Dep/EditRule.html','2018-12-13 08:39:40','0.0.0.0') [ RunTime:0.0150s ]
+
+[ 2018-12-13T08:39:50+08:00 ] ::1 /weiling/index.php/home/dep/index?_=1544661580811
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Controller\DepController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\DepController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xy_auth_group` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `xy_auth_group` WHERE `type` = 1 ORDER BY sort  [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: numPerPage D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\900ef223b9367c1bec965a5321de27a9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-12-13T08:40:15+08:00 ] ::1 /weiling/index.php?s=/Home/public/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0230s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('admin','退出成功！','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/weiling/index.php?s=/Home/Public/logout.html','2018-12-13 08:40:04','0.0.0.0') [ RunTime:0.0130s ]
+
+[ 2018-12-13T08:40:15+08:00 ] ::1 /weiling/index.php?s=/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-12-13T08:40:33+08:00 ] ::1 /weiling/index.php?s=/Home/Public/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE `username` = 'test' AND `status` = 1 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_user` WHERE `username` = 'test' LIMIT 1   [ RunTime:0.0290s ]
+SQL: UPDATE `xy_user` SET `logintime`='2018-12-13 08:40:33',`loginip`='0.0.0.0',`logins`=logins+1,`update_time`='1544661633' WHERE `id` = 20 [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_log` [ RunTime:0.0270s ]
+SQL: INSERT INTO `xy_log` (`username`,`content`,`os`,`url`,`addtime`,`ip`) VALUES ('test','登录成功！','Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36','/weiling/index.php?s=/Home/Public/Login.html','2018-12-13 08:40:33','0.0.0.0') [ RunTime:0.0090s ]
+
+[ 2018-12-13T08:40:43+08:00 ] ::1 /weiling/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_user` WHERE `update_time` > 1544661043 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_msg` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xy_msg` WHERE `viewtime` < '2000-01-01' AND `juid` = '20' LIMIT 1   [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `xy_menu` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_menu` WHERE ( level=0 ) ORDER BY sort  [ RunTime:0.0280s ]
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+SQL: SHOW COLUMNS FROM `xy_auth_group_access` [ RunTime:0.0140s ]
+SQL: SELECT `rules` FROM xy_auth_group_access a INNER JOIN xy_auth_group g on a.group_id=g.id  WHERE ( a.uid='20' and g.status='1' )  [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xy_auth_rule` [ RunTime:0.0140s ]
+SQL: SELECT `condition`,`name` FROM `xy_auth_rule` WHERE `id` IN ('','309','310','311','312','313','318','319','320','321','324','325','326','327','335','336','337','338','339','340','341','342','343','344','345','346','347','348','349','350','353','354','359','360','361','362','363','364','403','365','366','402','367','368','369','370','371','372','373','374','376','377','404','378','379','380','381','384','385','386','387','390','391','392','393','394','398','397','405','537','399','401','406','407','408','409','412','413','414','415','418','490','532','533','491','492','493','494','496','498','499','500','501','502','503','504','505','506','517','518','521','522','523','526','527','528','531','292','294','295','305','306') AND `type` = 1 AND `status` = 1  [ RunTime:0.0250s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\Core\Library\Think\Auth.class.php 第 197 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+NOTIC: [8] Use of undefined constant alink - assumed 'alink' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 467 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-12-13T08:40:53+08:00 ] ::1 /weiling/index.php?s=/Home/index/main.html&_=1544661643724
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::index() should be compatible with Common\Controller\BaseController::index($uid = '') D:\phpStudy\WWW\weiling\App\Home\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `xy_user` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `xy_user` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_quxiang` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_quxiang` ORDER BY id desc LIMIT 5   [ RunTime:0.0130s ]
+SQL: SELECT `depname` FROM `xy_user` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xy_renwu` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 157 行.
+SQL: SELECT * FROM `xy_renwu` WHERE `juid` LIKE '%20%' ORDER BY id desc LIMIT 5   [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `xy_tongzhi` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\phpStudy\WWW\weiling\App\Runtime\Cache\Home\8d1be3c46ef179b9e01c2c8d3de21c37.php 第 215 行.
+SQL: SELECT * FROM `xy_tongzhi` WHERE `juid` LIKE '%20%' ORDER BY id desc LIMIT 5   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xy_cust` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_cust` WHERE ( `xiaci` >= '2018-12-06' AND `xiaci` <= '2019-01-13'  ) AND (  `uid` = '20' OR `juid` LIKE '%20%' ) LIMIT 5   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xy_fahuo` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_fahuo` ORDER BY id desc LIMIT 5   [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `xy_hetong` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xy_hetong` WHERE (  `uid` = '20' OR `juid` LIKE '%20%' ) AND ( `jztime` >= '2018-12-06' AND `jztime` <= '2019-01-13'  ) LIMIT 5   [ RunTime:0.0240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.266015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.266015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-12-13T14:39:22+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_add?token=c79f55d77ad3dffd00fa96efb1dd7478&addid=31&type=2&cartid=42,43
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_cart` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=42 )  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0310s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0250s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121397974854','6','芬必得 布洛芬缓释胶囊','14.4','10','144','/2018-11-21/5bf4ced32c717.png','0.3g*20粒','1','九州通本溪医药有限公司') [ RunTime:0.0150s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121397974854 )  [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('144','2018121397974854','0','0','0','1544683162','0','31','40','0','0') [ RunTime:0.0280s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=42 ) [ RunTime:0.0340s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=43 )  [ RunTime:0.0120s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0290s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121397991005','9','三九/999 感冒灵颗粒','10.5','10','105','/2018-11-21/5bf4d506e409b.png','10g*9包/盒','2','辽宁众和药业有限公司') [ RunTime:0.0140s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121397991005 )  [ RunTime:0.0280s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('105','2018121397991005','0','0','0','1544683162','0','31','40','0','0') [ RunTime:0.0150s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=43 ) [ RunTime:0.0260s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( create_time=1544683162 )  [ RunTime:0.0130s ]
+SQL: SELECT `numbering` FROM `xy_order` WHERE ( create_time=1544683162 )  [ RunTime:0.0230s ]
+NOTIC: [8] Undefined variable: p D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1309 行.
+
+[ 2018-12-13T14:45:49+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_add?token=c79f55d77ad3dffd00fa96efb1dd7478&addid=31&type=2&cartid=44,45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_cart` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=44 )  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121310053485','6','芬必得 布洛芬缓释胶囊','14.4','10','144','/2018-11-21/5bf4ced32c717.png','0.3g*20粒','1','九州通本溪医药有限公司') [ RunTime:0.0160s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121310053485 )  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('144','2018121310053485','0','0','0','1544683549','0','31','40','0','0') [ RunTime:0.0150s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=44 ) [ RunTime:0.0180s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=45 )  [ RunTime:0.0120s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0110s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121310054985','9','三九/999 感冒灵颗粒','10.5','10','105','/2018-11-21/5bf4d506e409b.png','10g*9包/盒','2','辽宁众和药业有限公司') [ RunTime:0.0170s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121310054985 )  [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('105','2018121310054985','0','0','0','1544683549','0','31','40','0','0') [ RunTime:0.0150s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=45 ) [ RunTime:0.0160s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( create_time=1544683549 )  [ RunTime:0.0130s ]
+SQL: SELECT `numbering` FROM `xy_order` WHERE ( create_time=1544683549 )  [ RunTime:0.0140s ]
+NOTIC: [8] Undefined variable: p D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1309 行.
+
+[ 2018-12-13T14:48:27+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_add?token=c79f55d77ad3dffd00fa96efb1dd7478&addid=31&type=2&cartid=46,47
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_cart` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=46 )  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0140s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121397101569','6','芬必得 布洛芬缓释胶囊','14.4','10','144','/2018-11-21/5bf4ced32c717.png','0.3g*20粒','1','九州通本溪医药有限公司') [ RunTime:0.0170s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121397101569 )  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('144','2018121397101569','0','0','0','1544683706','0','31','40','0','0') [ RunTime:0.0170s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=46 ) [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=47 )  [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121398494810','9','三九/999 感冒灵颗粒','10.5','10','105','/2018-11-21/5bf4d506e409b.png','10g*9包/盒','2','辽宁众和药业有限公司') [ RunTime:0.0170s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121398494810 )  [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('105','2018121398494810','0','0','0','1544683707','0','31','40','0','0') [ RunTime:0.0170s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=47 ) [ RunTime:0.0170s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( create_time=1544683707 )  [ RunTime:0.0140s ]
+SQL: SELECT `numbering` FROM `xy_order` WHERE ( create_time=1544683707 )  [ RunTime:0.0140s ]
+
+[ 2018-12-13T14:49:59+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_add?token=c79f55d77ad3dffd00fa96efb1dd7478&addid=31&type=2&cartid=48,49
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xy_cart` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=48 )  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0140s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121355555110','6','芬必得 布洛芬缓释胶囊','14.4','10','144','/2018-11-21/5bf4ced32c717.png','0.3g*20粒','1','九州通本溪医药有限公司') [ RunTime:0.0160s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121355555110 )  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0140s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('144','2018121355555110','0','0','0','1544683799','0','31','40','0','0') [ RunTime:0.0180s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=48 ) [ RunTime:0.0180s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=49 )  [ RunTime:0.0120s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121355574810','9','三九/999 感冒灵颗粒','10.5','10','105','/2018-11-21/5bf4d506e409b.png','10g*9包/盒','2','辽宁众和药业有限公司') [ RunTime:0.0160s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121355574810 )  [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('105','2018121355574810','0','0','0','1544683799','0','31','40','0','0') [ RunTime:0.0150s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=49 ) [ RunTime:0.0160s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( create_time=1544683799 )  [ RunTime:0.0130s ]
+SQL: SELECT `numbering` FROM `xy_order` WHERE ( create_time=1544683799 )  [ RunTime:0.0150s ]
+
+[ 2018-12-13T15:06:13+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_add?token=c79f55d77ad3dffd00fa96efb1dd7478&addid=31&type=2&cartid=52,53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_cart` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=52 )  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121353561015','6','芬必得 布洛芬缓释胶囊','14.4','10','144','/2018-11-21/5bf4ced32c717.png','0.3g*20粒','1','九州通本溪医药有限公司') [ RunTime:0.0160s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121353561015 )  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0110s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('144','2018121353561015','0','0','0','1544684773','0','31','40','0','0') [ RunTime:0.0150s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=52 ) [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=53 )  [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0140s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121353975610','10','万通 清热解毒口服液 ','40','5','200','/2018-11-21/5bf4d5f95d56c.png','10ml*10支/盒','2','辽宁众和药业有限公司') [ RunTime:0.0150s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121353975610 )  [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('200','2018121353975610','0','0','0','1544684773','0','31','40','0','0') [ RunTime:0.0160s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=53 ) [ RunTime:0.0150s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( create_time=1544684773 )  [ RunTime:0.0130s ]
+SQL: SELECT `numbering` FROM `xy_order` WHERE ( create_time=1544684773 )  [ RunTime:0.0130s ]
+
+[ 2018-12-13T15:08:38+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_add?token=c79f55d77ad3dffd00fa96efb1dd7478&addid=31&type=2&cartid=54,55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_cart` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=54 )  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0120s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121354995310','6','芬必得 布洛芬缓释胶囊','14.4','10','144','/2018-11-21/5bf4ced32c717.png','0.3g*20粒','1','九州通本溪医药有限公司') [ RunTime:0.0150s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121354995310 )  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('144','2018121354995310','0','0','0','1544684918','0','31','40','0','0') [ RunTime:0.0140s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=54 ) [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_cart` WHERE ( id=55 )  [ RunTime:0.0120s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0110s ]
+SQL: INSERT INTO `xy_commodity` (`uid`,`numbering`,`mid`,`name`,`d_price`,`num`,`price`,`img`,`format`,`seller_id`,`seller_name`) VALUES ('40','2018121354100102','10','万通 清热解毒口服液 ','40','10','400','/2018-11-21/5bf4d5f95d56c.png','10ml*10支/盒','2','辽宁众和药业有限公司') [ RunTime:0.0160s ]
+SQL: SELECT `price` FROM `xy_commodity` WHERE ( numbering=2018121354100102 )  [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_order` (`z_price`,`numbering`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('400','2018121354100102','0','0','0','1544684918','0','31','40','0','0') [ RunTime:0.0150s ]
+SQL: DELETE FROM `xy_cart` WHERE ( id=55 ) [ RunTime:0.0160s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( create_time=1544684918 )  [ RunTime:0.0110s ]
+SQL: SELECT `numbering` FROM `xy_order` WHERE ( create_time=1544684918 )  [ RunTime:0.0130s ]
+
+[ 2018-12-13T15:20:03+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_add?token=c79f55d77ad3dffd00fa96efb1dd7478&addid=31&type=1&content=6,10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'c79f55d77ad3dffd00fa96efb1dd7478' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_medicine` [ RunTime:0.0140s ]
+SQL: SELECT `uid` FROM `xy_medicine` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xy_yaoshang` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_yaoshang` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `id` FROM `xy_yaoshang` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `price` FROM `xy_medicine` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `img` FROM `xy_medicine` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_medicine` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `format` FROM `xy_medicine` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0110s ]
+SQL: INSERT INTO `xy_commodity` (`seller_id`,`seller_name`,`mid`,`num`,`name`,`format`,`img`,`numbering`,`d_price`,`price`,`uid`) VALUES ('1','九州通本溪医药有限公司','6','10','芬必得 布洛芬缓释胶囊','0.3g*20粒','/2018-11-21/5bf4ced32c717.png','2018121398505055','14.4','144','40') [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: INSERT INTO `xy_order` (`numbering`,`z_price`,`payment_status`,`back_status`,`send_status`,`create_time`,`pay_time`,`address_id`,`uid`,`freight`,`payment`) VALUES ('2018121398505055','144','0','0','0','1544685603','0','31','40','0','0') [ RunTime:0.0140s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( create_time=1544685603 )  [ RunTime:0.0180s ]
+SQL: SELECT `numbering` FROM `xy_order` WHERE ( create_time=1544685603 )  [ RunTime:0.0120s ]
+
+[ 2018-12-13T16:23:42+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_paylist?orderNumber=[\%222018121353561019\%22,\%222018121353574997\%22]
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1328 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1349 行.
+
+[ 2018-12-13T16:25:21+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_paylist?orderNumber=[\2018121353561019\&\2018121353574997\]
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1328 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 1349 行.
+
+[ 2018-12-13T16:37:16+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_paylist?orderNumber=[%222018121354995310%22,%222018121354100102%22]
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0120s ]
+SQL: SELECT `num` FROM `xy_commodity` WHERE ( numbering=2018121354995310 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0130s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( numbering=2018121354995310 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_commodity` WHERE ( numbering=2018121354995310 )  [ RunTime:0.0130s ]
+SQL: SELECT `num` FROM `xy_commodity` WHERE ( numbering=2018121354100102 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( numbering=2018121354100102 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_commodity` WHERE ( numbering=2018121354100102 )  [ RunTime:0.0120s ]
+
+[ 2018-12-13T16:38:40+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_paylist?orderNumber=[%222018121354995310%22,%222018121354100102%22]
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0140s ]
+SQL: SELECT `num` FROM `xy_commodity` WHERE ( numbering=2018121354995310 ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( numbering=2018121354995310 ) LIMIT 1   [ RunTime:0.0290s ]
+SQL: SELECT * FROM `xy_commodity` WHERE ( numbering=2018121354995310 )  [ RunTime:0.0130s ]
+SQL: SELECT `num` FROM `xy_commodity` WHERE ( numbering=2018121354100102 ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( numbering=2018121354100102 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_commodity` WHERE ( numbering=2018121354100102 )  [ RunTime:0.0270s ]
+
+[ 2018-12-13T16:39:31+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_paylist?orderNumber=[%222018121354995310%22,%222018121354100102%22]
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0290s ]
+SQL: SELECT `num` FROM `xy_commodity` WHERE ( numbering=2018121354995310 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0280s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( numbering=2018121354995310 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_commodity` WHERE ( numbering=2018121354995310 )  [ RunTime:0.0270s ]
+SQL: SELECT `num` FROM `xy_commodity` WHERE ( numbering=2018121354100102 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( numbering=2018121354100102 ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT * FROM `xy_commodity` WHERE ( numbering=2018121354100102 )  [ RunTime:0.3220s ]
+
+[ 2018-12-13T16:47:01+08:00 ] ::1 /weiling/index.php/home/api/medicine_order_paylist?orderNumber=[%222018121354995310%22,%222018121354100102%22]
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `xy_commodity` [ RunTime:0.0130s ]
+SQL: SELECT `num` FROM `xy_commodity` WHERE ( numbering=2018121354995310 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_order` [ RunTime:0.0120s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( numbering=2018121354995310 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_commodity` WHERE ( numbering=2018121354995310 )  [ RunTime:0.0130s ]
+SQL: SELECT `num` FROM `xy_commodity` WHERE ( numbering=2018121354100102 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `z_price` FROM `xy_order` WHERE ( numbering=2018121354100102 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_commodity` WHERE ( numbering=2018121354100102 )  [ RunTime:0.0140s ]
+

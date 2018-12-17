@@ -1,0 +1,68 @@
+<div class="bjui-pageHeader">
+<form id="pagerForm" data-toggle="ajaxsearch" action="__URL__" method="get">
+	
+	<input type="hidden" name="pageSize" value="{$numPerPage}">
+    <input type="hidden" name="pageCurrent" value="{$_REQUEST['pageNum']|default=1}">
+	 
+        <div class="bjui-searchBar">
+            <label>关键词：</label><input type="text" value="{$_REQUEST['keys']}" name="keys" class="form-control" size="12" />
+			 <label>添加时间：</label><input type='text' data-toggle='datepicker' value='{$_REQUEST['time1']}' name='time1' class='form-control' size='12' />-<input type='text' data-toggle='datepicker' value='{$_REQUEST['time2']}' name='time2' class='form-control' size='12' />&nbsp;<label>需求类型：</label><select name='xuqiu' data-toggle='selectpicker'><option value=''>全部</option><foreach name='xuqiulist' item='v'><option value='{$v.xuqiu}'  <if condition="$v.xuqiu EQ $_REQUEST['xuqiu']">selected<else/>{$_REQUEST['xuqiu']}</if> >{$v.xuqiu}</option></foreach></select>&nbsp;<label>来源：</label><select name='laiyuan' data-toggle='selectpicker'><option value=''>全部</option><foreach name='laiyuanlist' item='v'><option value='{$v.laiyuan}'  <if condition="$v.laiyuan EQ $_REQUEST['laiyuan']">selected<else/>{$_REQUEST['laiyuan']}</if> >{$v.laiyuan}</option></foreach></select>&nbsp;<label>进展：</label><select name='jinzhan' data-toggle='selectpicker'><option value=''>全部</option><foreach name='jinzhanlist' item='v'><option value='{$v.jinzhan}'  <if condition="$v.jinzhan EQ $_REQUEST['jinzhan']">selected<else/>{$_REQUEST['jinzhan']}</if> >{$v.jinzhan}</option></foreach></select>&nbsp;
+             <button type="submit"  class="btn-default" data-icon="search">查询</button>
+              <a class="btn btn-orange" href="javascript:;" onclick="$(this).navtab('reloadForm', true);" data-icon="undo">清空查询</a>
+		</div> 
+</form>
+    
+</div>
+<div class="bjui-pageContent tableContent" style="padding:8px;">
+                   <!--//--> 
+                   <div class="col-md-12">
+                    <div class="panel panel-default">
+                          <div class="panel-heading"><h3 class="panel-title"><i class="fa fa-leaf"></i>  客户增长趋势 </h3></div>
+                            <div style="min-height:185px">
+							<img src="{:U('fxcust/qushi',array('keys'=>$_REQUEST['keys'],'time1'=>$_REQUEST['time1'],'time2'=>$_REQUEST['time2'],'xuqiu'=>$_REQUEST['xuqiu'],'laiyuan'=>$_REQUEST['laiyuan'],'jinzhan'=>$_REQUEST['jinzhan']))}">
+						  </div>
+                        </div>
+                      </div>
+                    <!--//--> 
+                    <div class="col-md-6">
+                    <div class="panel panel-default">
+                          <div class="panel-heading"><h3 class="panel-title"><i class="fa fa-volume-up"></i>  需求分析 </h3></div>
+                            <div style="min-height:185px">
+							<img src="{:U('fxcust/xuqiu',array('keys'=>$_REQUEST['keys'],'time1'=>$_REQUEST['time1'],'time2'=>$_REQUEST['time2'],'xuqiu'=>$_REQUEST['xuqiu'],'laiyuan'=>$_REQUEST['laiyuan'],'jinzhan'=>$_REQUEST['jinzhan']))}">
+						  </div>
+                        </div>
+                      </div>
+                      <!--//--> 
+                      <div class="col-md-6">
+                        <div class="panel panel-default">
+                          <div class="panel-heading"><h3 class="panel-title"><i class="fa fa-phone-square"></i>  客户来源 </h3></div>
+                            <div style="min-height:185px">
+							<img src="{:U('fxcust/laiyuan',array('keys'=>$_REQUEST['keys'],'time1'=>$_REQUEST['time1'],'time2'=>$_REQUEST['time2'],'xuqiu'=>$_REQUEST['xuqiu'],'laiyuan'=>$_REQUEST['laiyuan'],'jinzhan'=>$_REQUEST['jinzhan']))}">
+						  </div>
+                        </div>
+                      </div>
+                      <!--//-->
+					  <div class="col-md-6">
+                      <div class="panel panel-default">
+                          <div class="panel-heading"><h3 class="panel-title"><i class="fa fa-pencil-square-o"></i>  进展阶段 </h3></div>
+                            <div style="min-height:185px">
+							<img src="{:U('fxcust/jinzhan',array('keys'=>$_REQUEST['keys'],'time1'=>$_REQUEST['time1'],'time2'=>$_REQUEST['time2'],'xuqiu'=>$_REQUEST['xuqiu'],'laiyuan'=>$_REQUEST['laiyuan'],'jinzhan'=>$_REQUEST['jinzhan']))}">
+						  </div>
+                        </div>
+                      </div>
+                      <!--//--> 
+                      <div class="col-md-6">
+                        <div class="panel panel-default">
+                          <div class="panel-heading"><h3 class="panel-title"><i class="fa fa-user-md"></i>  业务员分析 </h3></div>
+                            <div style="min-height:185px">
+							<img src="{:U('fxcust/yewu',array('keys'=>$_REQUEST['keys'],'time1'=>$_REQUEST['time1'],'time2'=>$_REQUEST['time2'],'xuqiu'=>$_REQUEST['xuqiu'],'laiyuan'=>$_REQUEST['laiyuan'],'jinzhan'=>$_REQUEST['jinzhan']))}">
+						  </div>
+                        </div>
+                      </div>
+                      <!--//--> 					  
+</div>
+<div class="bjui-pageFooter">
+    <ul>
+       <li><button type="button" class="btn-close" data-icon="close">关闭</button></li>
+    </ul>
+</div>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{$Think.config.WEB_SITE_TITLE} Power by 连云港信友科技有限公司 服务热线：400-000-9981</title>
+<meta name="Keywords" content="连云港信友科技有限公司 服务热线：400-000-9981"/>
+<meta name="Description" content="连云港信友科技有限公司 服务热线：400-000-9981"/> 
+<!-- bootstrap - css -->
+<link href="__PUBLIC__/BJUI/themes/css/bootstrap.min.css" rel="stylesheet">
+<script src="__PUBLIC__/BJUI/js/jquery-1.7.2.min.js"></script>
+<script src="__PUBLIC__/BJUI/js/jquery.PrintArea.js"></script>
+</head>
+<body>
+<!-- core - css -->
+<div class="container min_width1300"  id="printArea" style="text-align:center">
+     <h3>{$Think.config.WEB_COMPANY_NAME}业绩统计</h3>
+     <table border="1"  width="100%" style="font-size:14px;">
+            <thead>
+<tr>
+<td rowspan="2">统计时间</th>
+<td rowspan="2">合同总金额</th>
+<td rowspan="2">已回款</th>
+<td rowspan="2">待回款</th>
+<td rowspan="2">已开票</th>
+<td rowspan="2">已付款/支出</th>
+<td colspan="2" align="center">统计</th>
+</tr>
+<tr>
+<td>实收款</th>
+<td>实付款</th>
+</tr>
+            </thead>
+            <tbody>
+<php>
+if(isset($_REQUEST['jingban']) && $_REQUEST['jingban'] != ''){
+	  $jingban=" and jingban='".$_REQUEST['jingban']."'";
+	}
+if(isset($_REQUEST['time1']) && $_REQUEST['time1'] != ''&&isset($_REQUEST['time2']) && $_REQUEST['time2'] != ''){
+  $nian=substr($_REQUEST['time1'],0,4);
+  }else{
+  $nian=date("Y",time());
+}
+if(isset($_REQUEST['time1']) && $_REQUEST['time1'] != ''&&isset($_REQUEST['time2']) && $_REQUEST['time2'] != ''){
+</php>
+<!---////////////搜索///////--->
+<tr>
+<td>{$_REQUEST['time1']}-{$_REQUEST['time2']} {$_REQUEST['jingban']}</td>
+<td><php>echo M('hetong')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'".$jingban)->sum('jine');</php></td>
+<td><php>echo M('hetong')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'".$jingban)->sum('yishou');</php></td>
+<td><php>echo M('hetong')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'".$jingban)->sum('weishou');</php></td>
+<td><php>echo M('hetong')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'".$jingban)->sum('kaipiao');</php></td>
+<td><php>echo M('hetong')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'".$jingban)->sum('yifu');</php></td>
+<td><php>echo M('shou')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'".$jingban)->sum('jine');</php></td>
+<td><php>echo M('fukuan')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'".$jingban)->sum('jine');</php></td>
+</tr>
+<Tr><Td colspan="8" height="50"></td></tr>
+<!---////////////搜索///////--->
+<php>
+}
+for ($i=1;$i<13;$i+=1){
+</php>
+<tr>
+<td>{$nian}年{$i}月</td>
+<td><php>
+if($i<10){
+echo M('hetong')->where("addtime like '%".$nian."-%' and addtime like '%0".$i."-%'".$jingban)->sum('jine');
+}else{
+echo M('hetong')->where("addtime like '%".$nian."-%' and addtime like '%".$i."-%'".$jingban)->sum('jine');
+}
+</php></td>
+<td><php>
+if($i<10){
+echo M('hetong')->where("addtime like '%".$nian."-%' and addtime like '%0".$i."-%'".$jingban)->sum('yishou');
+}else{
+echo M('hetong')->where("addtime like '%".$nian."-%' and addtime like '%".$i."-%'".$jingban)->sum('yishou');
+}
+</php></td>
+<td><php>
+if($i<10){
+echo M('hetong')->where("addtime like '%".$nian."-%' and addtime like '%0".$i."-%'".$jingban)->sum('weishou');
+}else{
+echo M('hetong')->where("addtime like '%".$nian."-%' and addtime like '%".$i."-%'".$jingban)->sum('weishou');
+}
+</php></td>
+<td><php>
+if($i<10){
+echo M('hetong')->where("addtime like '%".$nian."-%' and addtime like '%0".$i."-%'".$jingban)->sum('kaipiao');
+}else{
+echo M('hetong')->where("addtime like '%".$nian."-%' and addtime like '%".$i."-%'".$jingban)->sum('kaipiao');
+}
+</php></td>
+<td><php>
+if($i<10){
+echo M('hetong')->where("addtime like '%".$nian."-%' and addtime like '%0".$i."-%'".$jingban)->sum('yifu');
+}else{
+echo M('hetong')->where("addtime like '%".$nian."-%' and addtime like '%".$i."-%'".$jingban)->sum('yifu');
+}
+</php></td>
+<td><php>
+if($i<10){
+echo M('shou')->where("addtime like '%".$nian."-%' and addtime like '%0".$i."-%'".$jingban)->sum('jine');
+}else{
+echo M('shou')->where("addtime like '%".$nian."-%' and addtime like '%".$i."-%'".$jingban)->sum('jine');
+}
+</php></td>
+<td><php>
+if($i<10){
+echo M('fukuan')->where("addtime like '%".$nian."-%' and addtime like '%0".$i."-%'".$jingban)->sum('jine');
+}else{
+echo M('fukuan')->where("addtime like '%".$nian."-%' and addtime like '%".$i."-%'".$jingban)->sum('jine');
+}
+</php></td>
+         </tr> 
+<php>}</php>
+            </tbody>
+        </table>
+</div>
+<div style="text-align:center;margin-top:50px;">
+		<button type="button" id="print_btn" class="btn btn-primary">打印</button>&nbsp;
+		<button type="button" onclick="javascript:window.close();" class="btn">关闭</button>
+	   </div>
+<script type="text/javascript">
+/**
+ * 打印
+ **/
+$('#print_btn').click(function(){
+	$('#printArea').printArea();
+	$(this).html('加载中 ...');
+	setTimeout("$('#print_btn').html('打印');",1200);
+});
+</script>
+ </body>
+</html>

@@ -1,0 +1,101 @@
+<div class="bjui-pageHeader">
+<form id="pagerForm" data-toggle="ajaxsearch" action="__URL__" method="get">
+	<input type="hidden" name="pageSize" value="{$numPerPage}">
+    <input type="hidden" name="pageCurrent" value="{$_REQUEST['pageNum']|default=1}">
+        <div class="bjui-searchBar">
+			<label>时间：</label><input type='text' data-toggle='datepicker' value='{$_REQUEST['time1']}' name='time1' class='form-control' size='12' />-<input type='text' data-toggle='datepicker' value='{$_REQUEST['time2']}' name='time2' class='form-control' size='12' />
+             <button type="submit"  class="btn-default" data-icon="search">查询</button>
+             <a class="btn btn-orange" href="javascript:;" onclick="$(this).navtab('reloadForm', true);" data-icon="undo">清空查询</a>
+			 <php>if(display(CONTROLLER_NAME.'/dayin')){</php><span style="float:right;margin-right:5px;"><a href="{:U('tjbiao/dayin',array('time1'=>$_REQUEST['time1'],'time2'=>$_REQUEST['time2'],'jingban'=>$_REQUEST['jingban']))}" target="_blank" class="btn btn-blue" data-icon="print">打印</a></span><php>}</php>
+		</div> 
+</form>
+    
+</div>
+<div class="bjui-pageContent tableContent">
+     <table data-toggle="tablefixed" data-width="100%" data-layout-h="0" data-nowrap="true">
+            <thead>
+<tr>
+<th>项目</th>
+<th>本日{:date("Y-m-d",time())}</th>
+<th>本月{:date("Y-m",time())}</th>
+<th>本年{:date("Y",time())}</th>
+<th>历史</th>
+<th>{$_REQUEST['time1']}-{$_REQUEST['time2']}</th>
+</tr>
+
+            </thead>
+<tbody>
+<tr>
+<td>潜在客户</td>
+<td><php>echo M('cust')->where("addtime > '".date("Y-m-d",time())." 00:00:00' and addtime < '".date("Y-m-d",time())." 59:59:59'")->count('id');</php></td>
+<td><php>echo M('cust')->where("addtime like '%".date("Y",time())."-%' and addtime like '%".date("m",time())."-%'")->count('id');</php></td>
+<td><php>echo M('cust')->where("addtime like '%".date("Y",time())."-%' ")->count('id');</php></td>
+<td><php>echo M('cust')->count('id');</php></td>
+<td><php>echo M('cust')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'")->count('id');</php></td>
+</tr>
+<tr>
+<td>客户联系人</td>
+<td><php>echo M('custcon')->where("addtime > '".date("Y-m-d",time())." 00:00:00' and addtime < '".date("Y-m-d",time())." 59:59:59'")->count('id');</php></td>
+<td><php>echo M('custcon')->where("addtime like '%".date("Y",time())."-%' and addtime like '%".date("m",time())."-%'")->count('id');</php></td>
+<td><php>echo M('custcon')->where("addtime like '%".date("Y",time())."-%' ")->count('id');</php></td>
+<td><php>echo M('custcon')->count('id');</php></td>
+<td><php>echo M('custcon')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'")->count('id');</php></td>
+</tr>
+<tr>
+<td>跟单记录</td>
+<td><php>echo M('custgd')->where("addtime > '".date("Y-m-d",time())." 00:00:00' and addtime < '".date("Y-m-d",time())." 59:59:59'")->count('id');</php></td>
+<td><php>echo M('custgd')->where("addtime like '%".date("Y",time())."-%' and addtime like '%".date("m",time())."-%'")->count('id');</php></td>
+<td><php>echo M('custgd')->where("addtime like '%".date("Y",time())."-%' ")->count('id');</php></td>
+<td><php>echo M('custgd')->count('id');</php></td>
+<td><php>echo M('custgd')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'")->count('id');</php></td>
+</tr>
+<tr>
+<td>入库记录</td>
+<td><php>echo M('ruku')->where("addtime > '".date("Y-m-d",time())." 00:00:00' and addtime < '".date("Y-m-d",time())." 59:59:59'")->sum('shuliang');</php></td>
+<td><php>echo M('ruku')->where("addtime like '%".date("Y",time())."-%' and addtime like '%".date("m",time())."-%'")->sum('shuliang');</php></td>
+<td><php>echo M('ruku')->where("addtime like '%".date("Y",time())."-%' ")->sum('shuliang');</php></td>
+<td><php>echo M('ruku')->sum('shuliang');</php></td>
+<td><php>echo M('ruku')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'")->sum('shuliang');</php></td>
+</tr>
+<tr>
+<td>出库记录</td>
+<td><php>echo M('chuku')->where("addtime > '".date("Y-m-d",time())." 00:00:00' and addtime < '".date("Y-m-d",time())." 59:59:59'")->sum('shuliang');</php></td>
+<td><php>echo M('chuku')->where("addtime like '%".date("Y",time())."-%' and addtime like '%".date("m",time())."-%'")->sum('shuliang');</php></td>
+<td><php>echo M('chuku')->where("addtime like '%".date("Y",time())."-%' ")->sum('shuliang');</php></td>
+<td><php>echo M('chuku')->sum('shuliang');</php></td>
+<td><php>echo M('chuku')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'")->sum('shuliang');</php></td>
+</tr>
+<tr>
+<td>新增合同</td>
+<td><php>echo M('hetong')->where("addtime > '".date("Y-m-d",time())." 00:00:00' and addtime < '".date("Y-m-d",time())." 59:59:59'")->count('id');</php></td>
+<td><php>echo M('hetong')->where("addtime like '%".date("Y",time())."-%' and addtime like '%".date("m",time())."-%'")->count('id');</php></td>
+<td><php>echo M('hetong')->where("addtime like '%".date("Y",time())."-%' ")->count('id');</php></td>
+<td><php>echo M('hetong')->count('id');</php></td>
+<td><php>echo M('hetong')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'")->count('id');</php></td>
+</tr>
+<tr>
+<td>收款记录</td>
+<td><php>echo M('shou')->where("addtime > '".date("Y-m-d",time())." 00:00:00' and addtime < '".date("Y-m-d",time())." 59:59:59'")->sum('jine');</php></td>
+<td><php>echo M('shou')->where("addtime like '%".date("Y",time())."-%' and addtime like '%".date("m",time())."-%'")->sum('jine');</php></td>
+<td><php>echo M('shou')->where("addtime like '%".date("Y",time())."-%' ")->sum('jine');</php></td>
+<td><php>echo M('shou')->sum('jine');</php></td>
+<td><php>echo M('shou')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'")->sum('jine');</php></td>
+</tr>
+<tr>
+<td>付款记录</td>
+<td><php>echo M('fukuan')->where("addtime > '".date("Y-m-d",time())." 00:00:00' and addtime < '".date("Y-m-d",time())." 59:59:59'")->sum('jine');</php></td>
+<td><php>echo M('fukuan')->where("addtime like '%".date("Y",time())."-%' and addtime like '%".date("m",time())."-%'")->sum('jine');</php></td>
+<td><php>echo M('fukuan')->where("addtime like '%".date("Y",time())."-%' ")->sum('jine');</php></td>
+<td><php>echo M('fukuan')->sum('jine');</php></td>
+<td><php>echo M('fukuan')->where("addtime > '".$_REQUEST['time1']." 00:00:00' and addtime < '".$_REQUEST['time2']." 59:59:59'")->sum('jine');</php></td>
+</tr>
+
+
+            </tbody>
+        </table>
+</div>
+<div class="bjui-pageFooter">
+    <ul>
+       <li><button type="button" class="btn-close" data-icon="close">关闭</button></li>
+    </ul>
+</div>

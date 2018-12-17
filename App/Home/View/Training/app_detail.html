@@ -1,0 +1,59 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>医院详情</title>
+<link type="text/css"  href="__PUBLIC__/css/rui1.css" rel="stylesheet">
+<link href="__PUBLIC__/css/ectouch001.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/js/TouchSlide.js"></script>
+
+
+</head>
+<body style="background:#fff; margin:0; padding:0">
+
+<!--导航轮播开始-->
+<div style="width:100%; height:auto; background-color:#fafafa; margin-top:5px">
+		<video id="vdoMain" src="__UPLOAD__/Public{$list.video}"
+			 width="100%" height="auto" controls="true" 
+			 onMouseOut="v_move(0)" onMouseOver="v_move(1)"
+			 onPlaying="v_palying()" onPause="v_pause()"
+			 onLoadStart="v_loadstart();"
+			 onEnded="v_ended();"
+			 onTimeUpdate="v_timeupdate(this)" poster="{$list.img}">
+			 你的浏览器不支持视频
+		</video>
+</div>
+
+<div id=content class="wrap">
+
+<h2 class="headtitle">
+<span class="more1" style="float:left; color:#333; font-size:15px; position:relative; top:-5px">{$list.name}</span>
+</h2>
+<div style="clear:both"></div>
+</div>
+
+
+
+<div style="clear:both"></div>
+<h2 class="headtitle" style="border-left:#438acf solid 5px; width:99%; border-bottom:none">
+<span>培训简介</span>
+</h2>
+
+<div style="width:95%; height:auto; margin:20px auto;  font-family:'微软雅黑'; font-size:14px; color:#999999; line-height:23px">
+{$list.content}
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

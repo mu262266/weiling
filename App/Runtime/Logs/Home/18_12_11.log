@@ -1,0 +1,359 @@
+[ 2018-12-11T08:36:32+08:00 ] ::1 /weiling/index.php/home/api/seller_list?token=bd77e9826ea53764aadbb0b1b4397f38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'bd77e9826ea53764aadbb0b1b4397f38' LIMIT 1   [ RunTime:0.0100s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2018-12-11T08:36:41+08:00 ] ::1 /weiling//index.php/home/api/login?username=111111&password=111111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '111111' AND `user_password` = '9db06bcff9248837f86d1a6bcf41c9e7'  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '111111' AND `user_password` = '9db06bcff9248837f86d1a6bcf41c9e7'  [ RunTime:0.0130s ]
+
+[ 2018-12-11T08:37:18+08:00 ] ::1 /weiling//index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 107 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0110s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 126 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 128 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=30 )  [ RunTime:0.0140s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-12-11T08:42:49+08:00 ] ::1 /weiling//index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 108 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 108 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 127 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 129 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=30 )  [ RunTime:0.0110s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-12-11T08:47:41+08:00 ] ::1 /weiling//index.php/home/api/expertside_login?username=1&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 108 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 108 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 127 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 129 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=23 )  [ RunTime:0.0100s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-12-11T08:47:55+08:00 ] ::1 /weiling//index.php/home/api/login?username=1&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 27 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 59 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 61 行.
+
+[ 2018-12-11T08:53:10+08:00 ] ::1 /weiling//index.php/home/api/expertside_login?username=1&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 107 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 139 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 141 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=23 )  [ RunTime:0.0120s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-12-11T08:53:30+08:00 ] ::1 /weiling/index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 107 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0140s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 139 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 141 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=30 )  [ RunTime:0.0130s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-12-11T08:55:33+08:00 ] ::1 /weiling/index.php/home/api/login?username=1&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 27 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 27 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '1' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0140s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 59 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 61 行.
+
+[ 2018-12-11T09:00:48+08:00 ] ::1 /weiling/index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0120s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 138 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 140 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=30 )  [ RunTime:0.0120s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-12-11T09:01:57+08:00 ] ::1 /weiling/index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+
+[ 2018-12-11T09:02:54+08:00 ] ::1 /weiling/index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 140 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 142 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 147 行.
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=30 )  [ RunTime:0.0130s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-12-11T09:04:52+08:00 ] ::1 /weiling/index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=30 )  [ RunTime:0.0150s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-12-11T09:05:26+08:00 ] ::1 /weiling/index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=30 )  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined variable: id2 D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 117 行.
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2018-12-11T09:05:52+08:00 ] ::1 /weiling/index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=30 )  [ RunTime:0.0110s ]
+
+[ 2018-12-11T09:07:13+08:00 ] ::1 /weiling/index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 106 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 138 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 140 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=30 )  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined variable: expert2 D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 156 行.
+
+[ 2018-12-11T09:09:28+08:00 ] ::1 /weiling/index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: password D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 107 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 107 行.
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 139 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 141 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 145 行.
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=30 )  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_department` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_department` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0120s ]
+
+[ 2018-12-11T11:31:24+08:00 ] ::1 /weiling/index.php/home/api/expertside_login?username=4&password=1234567
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b'  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `user_account` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xy_app_member` WHERE `telephone` = '4' AND `user_password` = '224cf2b695a5e8ecaecfb9015161fa4b' LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] A non well formed numeric value encountered D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 123 行.
+NOTIC: [8] Undefined index: headimg D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 125 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weiling\App\Home\Controller\ApiController.class.php 第 129 行.
+SQL: SHOW COLUMNS FROM `xy_expert` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xy_expert` WHERE ( app_id=30 )  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xy_department` [ RunTime:0.0130s ]
+SQL: SELECT `name` FROM `xy_department` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0140s ]
+
+[ 2018-12-11T15:01:10+08:00 ] ::1 /weiling/index.php/home/api/expertside_currentlist?token=22af427d87438d4c9801a38d60afb5b4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = '22af427d87438d4c9801a38d60afb5b4' LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `expertid` FROM `xy_app_member` WHERE ( id=30 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_consultation_order` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xy_consultation_order` WHERE `expertid` = 3 AND `order_status` = 1  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xy_patient` [ RunTime:0.0140s ]
+SQL: SELECT `name` FROM `xy_patient` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `real_name` FROM `xy_app_member` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT `phone` FROM `xy_patient` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0120s ]
+
+[ 2018-12-11T17:30:28+08:00 ] ::1 /weiling/index.php/home/api/seller_list?token=bd77e9826ea53764aadbb0b1b4397f38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `xy_app_member` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `xy_app_member` WHERE `token` = 'bd77e9826ea53764aadbb0b1b4397f38' LIMIT 1   [ RunTime:0.0130s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
