@@ -3,7 +3,7 @@ Navicat MySQL Data Transfer
 
 Source Server         : 威灵
 Source Server Version : 50554
-Source Host           : 43.226.146.99:3306
+Source Host           : 
 Source Database       : weiling
 
 Target Server Type    : MYSQL
